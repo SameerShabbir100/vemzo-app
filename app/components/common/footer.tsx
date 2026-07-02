@@ -19,25 +19,23 @@ import {
 import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
 import LocationOnRoundedIcon from "@mui/icons-material/LocationOnRounded";
 
-import {
-  FOOTER_LINKS,
-  SERVICES,
-  SOCIAL_LINKS,
-} from "@/constants";
+import { FOOTER_LINKS, SERVICES, SOCIAL_LINKS } from "@/constants";
 
 export const Footer = () => {
-  const [currentYear, setCurrentYear] = useState<number>(2024);
+  const [currentYear, setCurrentYear] = useState<number>(2026);
 
-  useEffect(() => {
-    setCurrentYear(new Date().getFullYear());
-  }, []);
+  // useEffect(() => {
+  //   setCurrentYear(new Date().getFullYear());
+  // }, []);
 
   return (
     <Box
       component="footer"
       sx={{
-        borderTop: "1px solid rgba(76,29,149,.45)",
+        borderTop: "1px solid rgba(0,220,130,0.15)",
         mt: 10,
+        bgcolor: "#000003",
+        backdropFilter: "blur(10px)",
       }}
     >
       <Container maxWidth="xl" sx={{ py: 10 }}>
@@ -60,7 +58,7 @@ export const Footer = () => {
                 }}
               >
                 <Image
-                  src="/logo.png"
+                  src="/nuxt-logo.svg"
                   alt="Vemzo Technologies"
                   width={52}
                   height={52}
@@ -69,11 +67,10 @@ export const Footer = () => {
 
                 <Typography
                   variant="h5"
-               
                   sx={{
                     ml: 2,
                     color: "#fff",
-                    fontWeight: 700
+                    fontWeight: 700,
                   }}
                 >
                   Vemzo
@@ -88,10 +85,8 @@ export const Footer = () => {
                   maxWidth: 320,
                 }}
               >
-                We build modern Shopify stores,
-                scalable web applications,
-                and high-performance digital
-                experiences that help businesses
+                We build modern Shopify stores, scalable web applications, and
+                high-performance digital experiences that help businesses
                 launch, grow, and scale.
               </Typography>
             </Stack>
@@ -104,9 +99,8 @@ export const Footer = () => {
           <Grid size={{ xs: 12, md: 6, lg: 3 }}>
             <Typography
               variant="h6"
-              color="white"
               gutterBottom
-              sx={{ fontWeight: 600 }}
+              sx={{ fontWeight: 600, color: "#fff" }}
             >
               Quick Links
             </Typography>
@@ -125,11 +119,9 @@ export const Footer = () => {
                     borderRadius: 2,
                     width: "fit-content",
                     transition: ".3s",
-
                     "&:hover": {
-                      color: "#fff",
-                      backgroundColor:
-                        "rgba(255,255,255,.05)",
+                      color: "#00dc82",
+                      backgroundColor: "rgba(0,220,130,0.08)",
                       transform: "translateX(6px)",
                     },
                   }}
@@ -147,11 +139,8 @@ export const Footer = () => {
           <Grid size={{ xs: 12, md: 6, lg: 3 }}>
             <Typography
               variant="h6"
-           
-              color="white"
               gutterBottom
-              sx={{ fontWeight: 600 }}
-
+              sx={{ fontWeight: 600, color: "#fff" }}
             >
               Services
             </Typography>
@@ -170,10 +159,9 @@ export const Footer = () => {
                     borderRadius: 2,
                     width: "fit-content",
                     transition: "all .3s ease",
-
                     "&:hover": {
-                      color: "#fff",
-                      backgroundColor: "rgba(255,255,255,.05)",
+                      color: "#00dc82",
+                      backgroundColor: "rgba(0,220,130,0.08)",
                       transform: "translateX(6px)",
                     },
                   }}
@@ -191,10 +179,8 @@ export const Footer = () => {
           <Grid size={{ xs: 12, md: 6, lg: 3 }}>
             <Typography
               variant="h6"
-              color="white"
               gutterBottom
-              sx={{ fontWeight: 600 }}
-
+              sx={{ fontWeight: 600, color: "#fff" }}
             >
               Contact
             </Typography>
@@ -208,31 +194,30 @@ export const Footer = () => {
                   alignItems: "center",
                   gap: 2,
                   p: 2,
-                  bgcolor: "rgba(255,255,255,.04)",
-                  border: "1px solid rgba(255,255,255,.08)",
+                  bgcolor: "rgba(0, 0, 0, 0.04)",
+                  border: "1px solid rgba(0,220,130,0.15)",
                   borderRadius: 3,
+                  transition: "all .3s ease",
+                  "&:hover": {
+                    borderColor: "rgba(0,220,130,0.4)",
+                    bgcolor: "rgba(0,220,130,0.05)",
+                  },
                 }}
               >
                 <EmailRoundedIcon
                   sx={{
-                    color: "#8B5CF6",
+                    color: "#00dc82",
                     fontSize: 24,
                   }}
                 />
 
                 <Box>
-                  <Typography
-                    variant="caption"
-                    color="grey.500"
-                  >
+                  <Typography variant="caption" sx={{ color: "#fff" }}>
                     Email
                   </Typography>
 
-                  <Typography
-                    variant="body2"
-                    color="grey.200"
-                  >
-                    vemzotech@gmail.com
+                  <Typography variant="body2" sx={{ color: "#fff" }}>
+                    info@vemzo.io
                   </Typography>
                 </Box>
               </Paper>
@@ -245,72 +230,64 @@ export const Footer = () => {
                   alignItems: "center",
                   gap: 2,
                   p: 2,
-                  bgcolor: "rgba(255,255,255,.04)",
-                  border: "1px solid rgba(255,255,255,.08)",
+                  bgcolor: "rgba(0, 0, 0, 0.04)",
+                  border: "1px solid rgba(0,220,130,0.15)",
                   borderRadius: 3,
+                  transition: "all .3s ease",
+                  "&:hover": {
+                    borderColor: "rgba(0,220,130,0.4)",
+                    bgcolor: "rgba(0,220,130,0.05)",
+                  },
                 }}
               >
                 <LocationOnRoundedIcon
                   sx={{
-                    color: "#8B5CF6",
+                    color: "#00dc82",
                     fontSize: 24,
                   }}
                 />
 
                 <Box>
-                  <Typography
-                    variant="caption"
-                    color="grey.500"
-                  >
-                    Location
-                  </Typography>
+                  <Typography variant="caption" sx={{ color: "#fff" }}>
+  Location
+</Typography>
 
-                  <Typography
-                    variant="body2"
-                    color="grey.200"
-                  >
-                    Lahore, Pakistan
-                  </Typography>
+<Typography variant="body2" sx={{ color: "#fff" }}>
+  Lahore, Pakistan
+</Typography>
                 </Box>
               </Paper>
 
               {/* Social Icons */}
-              <Stack
-                direction="row"
-                spacing={1.5}
-                sx={{ pt: 1 }}
-              >
-                {SOCIAL_LINKS.map(
-                  ({ icon: Icon, href, name }) => (
-                    <IconButton
-                      key={name}
-                      component="a"
-                      href={href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={name}
-                      sx={{
-                        width: 46,
-                        height: 46,
-                        borderRadius: "50%",
-                        border:
-                          "1px solid rgba(76,29,149,.6)",
-                        color: "#D1D5DB",
-                        bgcolor: "transparent",
-                        transition: "all .3s ease",
-
-                        "&:hover": {
-                          bgcolor: "#7C3AED",
-                          borderColor: "#8B5CF6",
-                          color: "#fff",
-                          transform: "translateY(-4px)",
-                        },
-                      }}
-                    >
-                      <Icon size={20} />
-                    </IconButton>
-                  )
-                )}
+              <Stack direction="row" spacing={1.5} sx={{ pt: 1 }}>
+                {SOCIAL_LINKS.map(({ icon: Icon, href, name }) => (
+                  <IconButton
+                    key={name}
+                    component="a"
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={name}
+                    sx={{
+                      width: 46,
+                      height: 46,
+                      borderRadius: "50%",
+                      border: "1px solid rgba(0,220,130,0.2)",
+                      color: "#D1D5DB",
+                      bgcolor: "transparent",
+                      transition: "all .3s ease",
+                      "&:hover": {
+                        bgcolor: "#00dc82",
+                        borderColor: "#00dc82",
+                        color: "#000000",
+                        transform: "translateY(-4px)",
+                        boxShadow: "0 10px 25px rgba(0,220,130,0.3)",
+                      },
+                    }}
+                  >
+                    <Icon size={20} />
+                  </IconButton>
+                ))}
               </Stack>
             </Stack>
           </Grid>
@@ -324,7 +301,7 @@ export const Footer = () => {
           sx={{
             mt: 8,
             mb: 4,
-            borderColor: "rgba(76,29,149,.45)",
+            borderColor: "rgba(0,220,130,0.15)",
           }}
         />
 
@@ -354,7 +331,7 @@ export const Footer = () => {
             <Box
               component="span"
               sx={{
-                color: "#fff",
+                color: "#00dc82",
                 fontWeight: 600,
               }}
             >
@@ -378,9 +355,8 @@ export const Footer = () => {
               sx={{
                 color: "grey.500",
                 transition: ".3s",
-
                 "&:hover": {
-                  color: "#fff",
+                  color: "#00dc82",
                 },
               }}
             >
@@ -394,9 +370,8 @@ export const Footer = () => {
               sx={{
                 color: "grey.500",
                 transition: ".3s",
-
                 "&:hover": {
-                  color: "#fff",
+                  color: "#00dc82",
                 },
               }}
             >
@@ -410,9 +385,8 @@ export const Footer = () => {
               sx={{
                 color: "grey.500",
                 transition: ".3s",
-
                 "&:hover": {
-                  color: "#fff",
+                  color: "#00dc82",
                 },
               }}
             >

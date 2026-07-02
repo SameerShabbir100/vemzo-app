@@ -30,9 +30,19 @@ export const HeroSection = () => {
               label="Custom Software Development Company"
               variant="outlined"
               sx={{
-                borderRadius: 5,
-                px: 1,
-                color: "#ffffff",
+                px: 2,
+                py: 2.5,
+                borderRadius: 50,
+                borderColor: "rgba(0, 220, 130, 0.2)",
+                backgroundColor: "rgba(0, 220, 130, 0.1)",
+                color: "#00dc82",
+                fontWeight: 500,
+                fontSize: "0.875rem",
+                width: "fit-content",
+                alignSelf: { xs: "center", md: "flex-start" },
+                "& .MuiChip-label": {
+                  px: 1,
+                },
               }}
             />
 
@@ -49,8 +59,16 @@ export const HeroSection = () => {
                 lineHeight: 1.15,
               }}
             >
-              We design & build <Box component="span">high-impact</Box> digital
-              experiences
+              We design & build{" "}
+              <Box
+                component="span"
+                sx={{
+                  color: "#00dc82",
+                }}
+              >
+                high-impact
+              </Box>{" "}
+              digital experiences
             </Typography>
 
             <Typography
@@ -59,7 +77,7 @@ export const HeroSection = () => {
                 maxWidth: 650,
                 lineHeight: 1.8,
                 fontWeight: 400,
-                color: "#ffffff",
+                color: "#9ca3af",
               }}
             >
               We empower businesses with custom software, web applications,
@@ -76,14 +94,19 @@ export const HeroSection = () => {
               sx={{
                 px: 5,
                 py: 1.5,
-                borderRadius: 3,
+                borderRadius: 2,
                 textTransform: "none",
                 fontWeight: 600,
                 color: "#000000",
-                backgroundColor: "#ffffff",
+                backgroundColor: "#00dc82",
+                width: "fit-content",
+                alignSelf: { xs: "center", md: "flex-start" },
+                "&:hover": {
+                  backgroundColor: "#00c474",
+                },
               }}
             >
-              Learn More
+              Lets Get Started
             </Button>
           </Stack>
         </Box>

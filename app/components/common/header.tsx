@@ -40,24 +40,33 @@ export const Header = () => {
         position="fixed"
         elevation={0}
         sx={{
-          // background: "rgba(3,0,20,.45)",
-          backgroundColor: "transparent",
-          backdropFilter: "blur(20px)",
-          WebkitBackdropFilter: "blur(20px)",
-          borderBottom: "1px solid rgba(76,29,149,.35)",
-          boxShadow: "0 8px 32px rgba(42,14,97,.25)",
+          height: "65px",
+          background: "rgba(3,0,20,0.15)",
+          backdropFilter: "blur(12px)",
+          WebkitBackdropFilter: "blur(12px)",
+          boxShadow: "0 8px 32px rgba(0,220,130,0.15)",
+          borderBottom: "none",
+          zIndex: 50,
         }}
       >
-        <Container maxWidth="xl">
+        <Container 
+          maxWidth="xl" 
+          sx={{ 
+            height: "100%",
+            px: { xs: 2, md: 5 },
+          }}
+        >
           <Toolbar
             disableGutters
             sx={{
-              minHeight: 72,
+              height: "100%",
+              minHeight: "65px",
               justifyContent: "space-between",
+              px: "10px",
             }}
           >
             {/* ================================= */}
-            {/* Logo */}
+            {/* Logo + Name */}
             {/* ================================= */}
 
             <Link
@@ -71,23 +80,26 @@ export const Header = () => {
               }}
             >
               <Image
-                src="/logo.png"
+                src="/nuxt-logo.svg"
                 alt="Vemzo Technologies"
                 width={56}
                 height={56}
                 priority
+                draggable={false}
+                style={{ cursor: "pointer" }}
               />
 
               <Typography
                 variant="h6"
                 sx={{
-                  ml: 1.5,
+                  ml: "10px",
                   fontWeight: 700,
-                  color: "#fff",
+                  color: "#d1d5db",
                   display: {
                     xs: "none",
-                    sm: "block",
+                    md: "flex",
                   },
+                  fontSize: "1rem",
                 }}
               >
                 Vemzo Technologies
@@ -98,238 +110,214 @@ export const Header = () => {
             {/* Desktop Navigation */}
             {/* ================================= */}
 
-            <Paper
-              elevation={0}
+            <Box
               sx={{
                 display: {
                   xs: "none",
                   md: "flex",
                 },
+                width: "500px",
+                height: "100%",
                 alignItems: "center",
-                px: 2.5,
-                py: 1,
-                borderRadius: "999px",
-                bgcolor: "rgba(3,0,20,.45)",
-                border: "1px solid rgba(112,66,248,.35)",
-                backdropFilter: "blur(18px)",
-                gap: 2,
+                justifyContent: "space-between",
+                mr: "20px",
               }}
             >
-              {NAV_LINKS.map((item) => (
-                <Link
-                  key={item.title}
-                  component={NextLink}
-                  href={item.link}
-                  underline="none"
-                  sx={{
-                    px: 2,
-                    py: 1,
-                    borderRadius: 99,
-                    color: "grey.300",
-                    fontSize: 15,
-                    fontWeight: 500,
-                    transition: ".25s",
-
-                    "&:hover": {
-                      color: "#A855F7",
-                      bgcolor: "rgba(168,85,247,.08)",
-                    },
-                  }}
-                >
-                  {item.title}
-                </Link>
-              ))}
-            </Paper>
+              <Paper
+                elevation={0}
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  width: "100%",
+                  height: "auto",
+                  border: "1px solid rgba(0,220,130,0.2)",
+                  bgcolor: "#000003",
+                  borderRadius: "999px",
+                  px: "20px",
+                  py: "10px",
+                  color: "#d1d5db",
+                  mr: "15px",
+                }}
+              >
+                {NAV_LINKS.map((link) => (
+                  <Link
+                    key={link.title}
+                    component={NextLink}
+                    href={link.link}
+                    underline="none"
+                    sx={{
+                      cursor: "pointer",
+                      color: "#d1d5db",
+                      fontSize: "0.95rem",
+                      transition: "color 0.2s ease",
+                      "&:hover": {
+                        color: "#00dc82",
+                      },
+                    }}
+                  >
+                    {link.title}
+                  </Link>
+                ))}
+              </Paper>
+            </Box>
 
             {/* ================================= */}
             {/* Desktop Social Icons */}
             {/* ================================= */}
 
-            <Stack
-              direction="row"
-              spacing={1}
+            <Box
               sx={{
                 display: {
                   xs: "none",
                   md: "flex",
                 },
+                flexDirection: "row",
+                gap: "20px",
                 alignItems: "center",
               }}
             >
               {SOCIALS.map(({ link, name, icon: Icon }) => (
-                <Tooltip key={name} title={name} arrow>
-                  <IconButton
-                    component="a"
-                    href={link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={name}
-                    sx={{
-                      width: 44,
-                      height: 44,
-                      borderRadius: "50%",
-                      color: "grey.300",
-                      border: "1px solid rgba(112,66,248,.35)",
-                      bgcolor: "rgba(255,255,255,.02)",
-                      transition: "all .3s ease",
-
-                      "&:hover": {
-                        bgcolor: "#7C3AED",
-                        color: "#fff",
-                        transform: "translateY(-3px)",
-                        borderColor: "#8B5CF6",
-                        boxShadow: "0 10px 25px rgba(124,58,237,.35)",
-                      },
-                    }}
-                  >
-                    <Icon size={20} />
-                  </IconButton>
-                </Tooltip>
+                <Link
+                  key={name}
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  underline="none"
+                  sx={{
+                    color: "#ffffff",
+                    display: "flex",
+                    alignItems: "center",
+                    transition: "color 0.2s ease",
+                    "&:hover": {
+                      color: "#00dc82",
+                    },
+                  }}
+                >
+                  <Icon size={24} />
+                </Link>
               ))}
-            </Stack>
+            </Box>
 
             {/* ================================= */}
-            {/* Mobile Menu Button */}
+            {/* Hamburger Menu */}
             {/* ================================= */}
 
             <IconButton
-              onClick={handleDrawerOpen}
+              onClick={() => setMobileOpen(true)}
               sx={{
                 display: {
                   xs: "flex",
                   md: "none",
                 },
-                width: 48,
-                height: 48,
-                borderRadius: 3,
-                color: "#fff",
-                border: "1px solid rgba(112,66,248,.35)",
-                bgcolor: "rgba(255,255,255,.03)",
-
+                color: "#ffffff",
+                fontSize: "2rem",
+                p: 0,
                 "&:hover": {
-                  bgcolor: "rgba(124,58,237,.20)",
+                  color: "#00dc82",
+                  bgcolor: "transparent",
                 },
               }}
             >
-              <MenuRoundedIcon />
+              ☰
             </IconButton>
           </Toolbar>
         </Container>
       </AppBar>
 
       {/* ================================= */}
-      {/* Mobile Drawer */}
+      {/* Mobile Menu */}
       {/* ================================= */}
 
       <Drawer
         anchor="right"
         open={mobileOpen}
-        onClose={handleDrawerClose}
+        onClose={() => setMobileOpen(false)}
         sx={{
-          width: 320,
-          bgcolor: "#030014",
-          color: "#fff",
-          borderLeft: "1px solid rgba(112,66,248,.25)",
-          backgroundImage: "none",
+          display: { xs: "block", md: "none" },
+          "& .MuiDrawer-paper": {
+            width: "100%",
+            bgcolor: "#000003",
+            color: "#d1d5db",
+            top: "65px",
+            height: "calc(100% - 65px)",
+            p: 3,
+          },
         }}
       >
         <Box
           sx={{
             display: "flex",
+            flexDirection: "column",
             alignItems: "center",
-            justifyContent: "space-between",
-            p: 3,
+            gap: 3,
           }}
         >
-          <Typography variant="h6">Menu</Typography>
-
-          <IconButton
-            onClick={handleDrawerClose}
+          {/* Links */}
+          <Box
             sx={{
-              color: "#fff",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              gap: 2,
+              width: "100%",
             }}
           >
-            <MenuRoundedIcon />
-          </IconButton>
-        </Box>
-
-        <Divider
-          sx={{
-            borderColor: "rgba(112,66,248,.25)",
-          }}
-        />
-
-        {/* Added navigation links to drawer */}
-        <Box sx={{ p: 2 }}>
-          <Stack spacing={1}>
-            {NAV_LINKS.map((item) => (
+            {NAV_LINKS.map((link) => (
               <Link
-                key={item.title}
+                key={link.title}
                 component={NextLink}
-                href={item.link}
-                onClick={handleDrawerClose}
+                href={link.link}
+                onClick={() => setMobileOpen(false)}
                 underline="none"
                 sx={{
-                  display: "block",
-                  py: 1.5,
-                  px: 2,
-                  borderRadius: 2,
-                  color: "grey.300",
-                  fontSize: 16,
-                  fontWeight: 500,
-                  transition: ".25s",
-
+                  cursor: "pointer",
+                  color: "#d1d5db",
+                  fontSize: "1rem",
+                  textAlign: "center",
+                  transition: "color 0.2s ease",
+                  py: 1,
+                  width: "100%",
                   "&:hover": {
-                    color: "#A855F7",
-                    bgcolor: "rgba(168,85,247,.08)",
+                    color: "#00dc82",
                   },
                 }}
               >
-                {item.title}
+                {link.title}
               </Link>
             ))}
-          </Stack>
-        </Box>
+          </Box>
 
-        <Divider
-          sx={{
-            borderColor: "rgba(112,66,248,.25)",
-          }}
-        />
-
-        {/* Social icons in drawer */}
-        <Box sx={{ p: 3 }}>
-          <Stack direction="row" spacing={1.5}>
+          {/* Social Icons */}
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              gap: 4,
+              mt: 3,
+            }}
+          >
             {SOCIALS.map(({ link, name, icon: Icon }) => (
-              <IconButton
+              <Link
                 key={name}
-                component="a"
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label={name}
+                underline="none"
                 sx={{
-                  width: 44,
-                  height: 44,
-                  borderRadius: "50%",
-                  color: "grey.300",
-                  border: "1px solid rgba(112,66,248,.35)",
-                  bgcolor: "rgba(255,255,255,.02)",
-                  transition: "all .3s ease",
-
+                  color: "#ffffff",
+                  display: "flex",
+                  alignItems: "center",
+                  transition: "color 0.2s ease",
                   "&:hover": {
-                    bgcolor: "#7C3AED",
-                    color: "#fff",
-                    transform: "translateY(-3px)",
-                    borderColor: "#8B5CF6",
-                    boxShadow: "0 10px 25px rgba(124,58,237,.35)",
+                    color: "#00dc82",
                   },
                 }}
               >
-                <Icon size={20} />
-              </IconButton>
+                <Icon size={32} />
+              </Link>
             ))}
-          </Stack>
+          </Box>
         </Box>
       </Drawer>
     </>

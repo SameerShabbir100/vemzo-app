@@ -5,6 +5,7 @@ import "./globals.css";
 import ThemeRegistry from "@/theme/ThemeRegistry";
 import { Header } from "./components/common/header";
 import { Footer } from "./components/common/footer";
+import { WhatsAppButton } from "@/app/components/common/whatsapp-button";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,6 +38,7 @@ export default function RootLayout({
           <Header />
           <main>{children}</main>
           <Footer />
+          <WhatsAppButton />
         </ThemeRegistry>
       </body>
     </html>

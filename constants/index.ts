@@ -7,6 +7,7 @@ import {
   RxLinkedinLogo,
 } from "react-icons/rx";
 
+
 export const SKILL_DATA = [
   {
     skill_name: "HTML5",
@@ -760,16 +761,20 @@ export const CONTACT_INFO = [
 ] as const;
 
 export const SOCIAL_LINKS = [
-
+  {
+    name: "Facebook",
+    href: "https://facebook.com/yourpage",
+    icon: FaFacebook,
+  },
+  {
+    name: "Instagram",
+    href: "https://instagram.com/yourhandle",
+    icon: RxInstagramLogo,
+  },
   {
     name: "LinkedIn",
     href: "https://linkedin.com",
     icon: RxLinkedinLogo,
-  },
-  {
-    name: "Discord",
-    href: "https://discord.com",
-    icon: RxDiscordLogo,
   },
   {
     name: "Twitter",
@@ -806,7 +811,6 @@ export const SERVICE_CATEGORIES = [
 export const FOOTER_LINKS = [
   { name: "Home", href: "/" },
   { name: "Services", href: "/services" },
-  { name: "Projects", href: "/projects" },
   { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" },
 ];

@@ -18,7 +18,7 @@ export default function Home() {
       <WhyChoose />
        <ServicesGrid />
        <Skills />
-       <Projects />
+       {/* <Projects /> */}
        <Workflow />
        <Encryption />
        <Industries />

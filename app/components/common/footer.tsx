@@ -312,7 +312,7 @@ export const Footer = () => {
               xs: "column",
               md: "row",
             },
-            justifyContent: "space-between",
+            justifyContent: "space-around",
             alignItems: "center",
             gap: 3,
           }}
@@ -323,7 +323,7 @@ export const Footer = () => {
               color: "grey.500",
               textAlign: {
                 xs: "center",
-                md: "left",
+                md: "center",
               },
             }}
           >
@@ -340,7 +340,7 @@ export const Footer = () => {
             . All rights reserved.
           </Typography>
 
-          <Stack
+          {/* <Stack
             direction="row"
             spacing={3}
             sx={{
@@ -392,7 +392,7 @@ export const Footer = () => {
             >
               Contact
             </Link>
-          </Stack>
+          </Stack> */}
         </Box>
       </Container>
     </Box>

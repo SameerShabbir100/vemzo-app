@@ -55,7 +55,7 @@ export const Workflow = () => {
         },
         {
           threshold: 0.6,
-        }
+        },
       );
 
       observer.observe(el);
@@ -86,23 +86,23 @@ export const Workflow = () => {
         }}
       />
 
-     <div className="text-center mb-16">
-  <span className="inline-flex px-4 py-2 rounded-full border border-[rgba(0,220,130,0.2)] bg-[rgba(0,220,130,0.1)] text-[#00dc82] text-sm font-medium mb-5">
-    Our Process
-  </span>
+      <div className="text-center mb-16">
+        <span className="inline-flex px-4 py-2 rounded-full border border-[rgba(0,220,130,0.2)] bg-[rgba(0,220,130,0.1)] text-[#00dc82] text-sm font-medium mb-5">
+          Our Process
+        </span>
 
-  <h2 className="text-4xl md:text-5xl font-bold text-white">
-    From Idea to
-    <span className="text-[#00dc82]"> Product Launch</span>
-  </h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-white">
+          From Idea to
+          <span className="text-[#00dc82]"> Product Launch</span>
+        </h2>
 
-  <p className="max-w-3xl mx-auto mt-6 text-gray-400 leading-8 text-lg">
-    Every successful digital product starts with a clear strategy. We follow
-    a transparent, collaborative development process—from discovery and UI/UX
-    design to development, testing, deployment, and continuous improvement—to
-    ensure exceptional results for every client.
-  </p>
-</div>
+        <p className="max-w-3xl mx-auto mt-6 text-gray-400 leading-8 text-lg">
+          Every successful digital product starts with a clear strategy. We
+          follow a transparent, collaborative development process—from discovery
+          and UI/UX design to development, testing, deployment, and continuous
+          improvement—to ensure exceptional results for every client.
+        </p>
+      </div>
 
       {/* Timeline container */}
       <Box
@@ -149,7 +149,7 @@ export const Workflow = () => {
               <Box
                 key={item.step}
                 ref={(el: HTMLDivElement | null) => {
-                refs.current[index] = el;
+                  refs.current[index] = el;
                 }}
                 sx={{
                   position: "relative",
@@ -159,7 +159,7 @@ export const Workflow = () => {
                 }}
               >
                 {/* Center dot */}
-                <Box
+                {/* <Box
                   sx={{
                     position: "absolute",
                     left: "50%",
@@ -180,6 +180,29 @@ export const Workflow = () => {
                           bgcolor: "#090d1f",
                           borderColor: "rgba(0,220,130,0.3)",
                         }),
+                  }}
+                /> */}
+                <Box
+                  sx={{
+                    position: "absolute",
+                    left: "50%",
+                    width: 16,
+                    height: 16,
+                    borderRadius: "50%",
+                    border: "2px solid",
+                    transition: "all 0.3s ease",
+
+                    transform: isActive
+                      ? "translateX(-50%) scale(1.25)"
+                      : "translateX(-50%)",
+
+                    bgcolor: isActive ? "#00dc82" : "#090d1f",
+
+                    borderColor: isActive ? "#00dc82" : "rgba(0,220,130,0.3)",
+
+                    boxShadow: isActive
+                      ? "0 0 20px rgba(0,220,130,0.6)"
+                      : "none",
                   }}
                 />
 

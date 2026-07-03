@@ -28,9 +28,9 @@ export const Contact = () => {
         </h2>
 
         <p className="max-w-3xl mx-auto mt-6 text-gray-400 leading-8 text-lg">
-          Whether you&apos;re  launching a startup, scaling your business, or
-          modernizing your existing systems, our team is here to help.
-          Tell us about your project, and Let&apos;s create something exceptional
+          Whether you&apos;re launching a startup, scaling your business, or
+          modernizing your existing systems, our team is here to help. Tell us
+          about your project, and Let&apos;s create something exceptional
           together.
         </p>
       </div>
@@ -48,7 +48,7 @@ export const Contact = () => {
           <ContactInfoCard
             icon={<PhoneOutlinedIcon sx={{ fontSize: 28 }} />}
             title="Phone"
-            value="+92 0000 000000"
+            value="+923244757212"
           />
 
           <ContactInfoCard

@@ -7,7 +7,6 @@ import {
   RxLinkedinLogo,
 } from "react-icons/rx";
 
-
 export const SKILL_DATA = [
   {
     skill_name: "HTML5",
@@ -189,18 +188,18 @@ export const FRONTEND_SKILL = [
     width: 80,
     height: 80,
   },
- {
-  skill_name: "Vue.js",
-  image: "vue.png",
-  width: 80,
-  height: 80,
-},
-{
-  skill_name: "Angular",
-  image: "angular.png",
-  width: 80,
-  height: 80,
-},
+  {
+    skill_name: "Vue.js",
+    image: "vue.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Angular",
+    image: "angular.png",
+    width: 80,
+    height: 80,
+  },
   {
     skill_name: "Next.js",
     image: "next.png",
@@ -286,7 +285,7 @@ export const FULLSTACK_SKILL = [
     width: 50,
     height: 50,
   },
-   {
+  {
     skill_name: "Shopify",
     image: "shopify.png",
     width: 60,
@@ -302,8 +301,6 @@ export const OTHER_SKILL = [
     height: 60,
   },
 ] as const;
-
-
 
 export const FOOTER_DATA = [
   {
@@ -367,13 +364,9 @@ export const FOOTER_DATA = [
     ],
   },
 ] as const;
-import {
-  FaShopify,
-} from "react-icons/fa";
+import { FaShopify } from "react-icons/fa";
 
-import {
-  MdPointOfSale,
-} from "react-icons/md";
+import { MdPointOfSale } from "react-icons/md";
 
 import {
   HiOutlineUsers,
@@ -382,9 +375,7 @@ import {
   HiOutlineBuildingOffice2,
 } from "react-icons/hi2";
 
-import {
-  BsWindowStack,
-} from "react-icons/bs";
+import { BsWindowStack } from "react-icons/bs";
 
 export const SERVICES = [
   {
@@ -631,13 +622,7 @@ export const PROJECTS = [
     image: "/projects/sarvel.png",
     description:
       "Creative networking platform connecting artists, designers, organizations, and clients worldwide.",
-    technologies: [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Node.js",
-    ],
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Node.js"],
     liveUrl: "https://sarvel.com/",
     githubUrl: "",
   },
@@ -663,13 +648,7 @@ export const PROJECTS = [
     image: "/projects/yourmellon.png",
     description:
       "European recruitment platform connecting verified candidates with employers through streamlined hiring.",
-    technologies: [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Node.js",
-    ],
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Node.js"],
     liveUrl: "https://yourmellon.com/",
     githubUrl: "",
   },
@@ -750,7 +729,7 @@ export const CONTACT_INFO = [
   },
   {
     title: "Phone",
-    value: "+92 0000 000000",
+    value: "+923244757212",
     icon: "phone",
   },
   {

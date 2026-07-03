@@ -45,7 +45,7 @@ export const Projects = () => {
       <Container maxWidth="lg">
         <Grid container spacing={4}>
           {PROJECT.slice(0, 3).map((project) => (
-            <Grid item xs={12} md={6} lg={4} key={project.title}>
+            <Grid size={{ xs: 12, md: 6, lg: 4 }} key={project.title}>
               <HomeProjectCard
                 title={project.title}
                 description={project.description}

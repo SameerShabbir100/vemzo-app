@@ -21,7 +21,8 @@ const theme = createTheme({
     // fontFamily: ["Inter", "Roboto", "Helvetica", "Arial", "sans-serif"].join(
     //   ",",
     // ),
-    fontFamily: ["Roboto", "sans-serif"].join(","),
+    // fontFamily: ["Manrope", "Roboto", "sans-serif"].join(","),
+    fontFamily: "var(--font-manrope)",
 
     button: {
       //   textTransform: "none",

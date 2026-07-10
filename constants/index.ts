@@ -652,6 +652,134 @@ export const PROJECTS = [
     liveUrl: "https://yourmellon.com/",
     githubUrl: "",
   },
+  {
+    title: "Mandelli",
+    category: "Web App",
+    image: "/projects/mandli.png",
+    description:
+      "Premium business website delivering a modern digital experience with responsive design, elegant UI, and optimized user interactions.",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Responsive Design",
+    ],
+    liveUrl: "https://mandelli.it/",
+    githubUrl: "",
+  },
+  {
+    title: "Rite",
+    category: "Web App",
+    image: "/projects/rite.png",
+    description:
+      "Modern web platform featuring a clean interface, responsive layouts, and seamless user experience built with scalable frontend technologies.",
+    technologies: [
+      "React",
+      "JavaScript",
+      "Tailwind CSS",
+      "API Integration",
+      "Responsive Design",
+    ],
+    liveUrl: "https://www.rite.us/",
+    githubUrl: "",
+  },
+  {
+    title: "Cloud Retailer",
+    category: "Web App",
+    image: "/projects/clouderetailer.png",
+    description:
+      "Cloud-based retail management platform providing business solutions with secure authentication, data management, and enterprise workflows.",
+    technologies: [
+      "Vue.js",
+      "Laravel",
+      "REST API",
+      "Database Integration",
+      "Cloud Services",
+    ],
+    liveUrl: "https://login.cloudretailer.com/",
+    githubUrl: "",
+  },
+  {
+    title: "Bitcoin Retirement Calculator",
+    category: "Web App",
+    image: "/projects/bitcoin.png",
+    description:
+      "Interactive financial calculator application helping users estimate retirement scenarios using cryptocurrency investment projections.",
+    technologies: [
+      "React",
+      "JavaScript",
+      "Tailwind CSS",
+      "Interactive UI",
+      "Data Visualization",
+    ],
+    liveUrl: "https://www.bitcoinretirementcalculator.com/",
+    githubUrl: "",
+  },
+  {
+    title: "My Packaging Pro",
+    category: "Web App",
+    image: "/projects/mypackageingpro.png",
+    description:
+      "E-commerce focused packaging solution platform with product presentation, user-friendly navigation, and optimized customer experience.",
+    technologies: [
+      "Shopify",
+      "Liquid",
+      "JavaScript",
+      "CSS",
+      "E-commerce Development",
+    ],
+    liveUrl: "https://mypackagingpro.com/",
+    githubUrl: "",
+  },
+  {
+    title: "Seoul Krispy",
+    category: "Web App",
+    image: "/projects/seoul.png",
+    description:
+      "Restaurant web application showcasing menu offerings with an engaging design, responsive experience, and customer-focused interface.",
+    technologies: [
+      "React",
+      "JavaScript",
+      "Tailwind CSS",
+      "Responsive Design",
+      "CMS Integration",
+    ],
+    liveUrl: "https://seoulkrispy.online/",
+    githubUrl: "",
+  },
+  {
+    title: "Lex & Levie Pet Supplies",
+    category: "Web App",
+    image: "/projects/pet.png",
+    description:
+      "Pet supplies e-commerce platform designed with a smooth shopping experience, product management, and customer-friendly interface.",
+    technologies: [
+      "Shopify",
+      "Liquid",
+      "JavaScript",
+      "E-commerce",
+      "Payment Integration",
+    ],
+    liveUrl: "https://www.lexandleviepetsupplies.com/",
+    githubUrl: "",
+  },
+  {
+    title: "Forte Fitness Equipment",
+    category: "Web App",
+    image: "/projects/gym.png",
+    description:
+      "Fitness equipment e-commerce platform providing product discovery, modern UI, and optimized online shopping experience.",
+    technologies: [
+      "Shopify",
+      "Liquid",
+      "JavaScript",
+      "CSS",
+      "E-commerce Development",
+    ],
+    liveUrl: "https://www.fortefitnessequipment.com/",
+    githubUrl: "",
+  },
 ];
 export const NAV_LINKS = [
   {

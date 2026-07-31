@@ -249,12 +249,12 @@ export const Footer = () => {
 
                 <Box>
                   <Typography variant="caption" sx={{ color: "#fff" }}>
-  Location
-</Typography>
+                    Location
+                  </Typography>
 
-<Typography variant="body2" sx={{ color: "#fff" }}>
-  Lahore, Pakistan
-</Typography>
+                  <Typography variant="body2" sx={{ color: "#fff" }}>
+                    Lahore, Pakistan
+                  </Typography>
                 </Box>
               </Paper>
 

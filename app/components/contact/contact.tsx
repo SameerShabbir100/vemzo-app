@@ -48,13 +48,13 @@ export const Contact = () => {
           <ContactInfoCard
             icon={<PhoneOutlinedIcon sx={{ fontSize: 28 }} />}
             title="Phone"
-            value="+923244757212"
+            value="+923045421167"
           />
 
           <ContactInfoCard
             icon={<LocationOnOutlinedIcon sx={{ fontSize: 28 }} />}
             title="Location"
-            value="Lahore, Pakistan"
+            value="432 jade ext st 5 park view city lahore"
           />
         </div>
 

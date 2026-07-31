@@ -19,7 +19,7 @@ export const WhatsAppButton = () => {
       <Tooltip title="Chat with us" placement="left" arrow>
         <IconButton
           component={Link}
-          href="https://wa.me/923244757212"
+          href="https://wa.me/923045421167"
           target="_blank"
           rel="noopener noreferrer"
           sx={{

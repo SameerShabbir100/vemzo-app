@@ -734,7 +734,7 @@ export const PROJECTS = [
   },
   {
     title: "Seoul Krispy",
-    category: "Web App",
+    category: "Shopify",
     image: "/projects/seoul.png",
     description:
       "Restaurant web application showcasing menu offerings with an engaging design, responsive experience, and customer-focused interface.",
@@ -750,7 +750,7 @@ export const PROJECTS = [
   },
   {
     title: "Lex & Levie Pet Supplies",
-    category: "Web App",
+    category: "Shopify",
     image: "/projects/pet.png",
     description:
       "Pet supplies e-commerce platform designed with a smooth shopping experience, product management, and customer-friendly interface.",
@@ -766,7 +766,7 @@ export const PROJECTS = [
   },
   {
     title: "Forte Fitness Equipment",
-    category: "Web App",
+    category: "Shopify",
     image: "/projects/gym.png",
     description:
       "Fitness equipment e-commerce platform providing product discovery, modern UI, and optimized online shopping experience.",
@@ -857,12 +857,12 @@ export const CONTACT_INFO = [
   },
   {
     title: "Phone",
-    value: "+923244757212",
+    value: "+923045421167",
     icon: "phone",
   },
   {
     title: "Location",
-    value: "Lahore, Pakistan",
+    value: "432 jade ext st 5 park view city lahore",
     icon: "location",
   },
 ] as const;
@@ -920,8 +920,13 @@ export const FOOTER_LINKS = [
   { name: "Services", href: "/services" },
   { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" },
+  { name: "Privacy Policy", href: "/privacy-policy" },
+  { name: "Terms & Conditions", href: "/terms-and-conditions" },
+  { name: "Refund Policy", href: "/refund-policy" },
+  { name: "Service Delivery", href: "/service-delivery-policy" },
 ];
 
 export const LINKS = {
   sourceCode: "https://github.com/",
 };
+

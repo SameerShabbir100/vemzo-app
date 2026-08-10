@@ -54,7 +54,7 @@ export const Contact = () => {
           <ContactInfoCard
             icon={<LocationOnOutlinedIcon sx={{ fontSize: 28 }} />}
             title="Location"
-            value="432 jade ext st 5 park view city lahore"
+            value="432 Jade Ext. St 5, Park View City Lahore, Pakistan"
           />
         </div>
 

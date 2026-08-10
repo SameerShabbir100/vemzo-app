@@ -131,17 +131,17 @@ export const SOCIALS = [
   {
     name: "Instagram",
     icon: RxInstagramLogo,
-    link: "https://instagram.com",
+    link: "https://www.instagram.com/vemzotechnologies/",
   },
   {
     name: "Facebook",
     icon: FaFacebook,
-    link: "https://facebook.com",
+    link: "https://www.facebook.com/vemzotechnologies",
   },
   // {
   //   name: "Twitter",
   //   icon: RxTwitterLogo,
-  //   link: "https://x.com",
+  //   link: "https://x.com/vemzotech",
   // },
 ] as const;
 
@@ -314,12 +314,12 @@ export const FOOTER_DATA = [
       {
         name: "Instagram",
         icon: RxInstagramLogo,
-        link: "https://instagram.com",
+        link: "https://www.instagram.com/vemzotechnologies/",
       },
       {
         name: "Twitter",
         icon: RxTwitterLogo,
-        link: "https://x.com/",
+        link: "https://x.com/vemzotech",
       },
     ],
   },
@@ -329,17 +329,17 @@ export const FOOTER_DATA = [
       {
         name: "Instagram",
         icon: RxInstagramLogo,
-        link: "https://instagram.com",
+        link: "https://www.instagram.com/vemzotechnologies/",
       },
       {
         name: "Twitter",
         icon: RxTwitterLogo,
-        link: "https://x.com/",
+        link: "https://x.com/vemzotech",
       },
       {
         name: "Linkedin",
         icon: RxLinkedinLogo,
-        link: "https://linkedin.com",
+        link: "linkedin.com/company/vemzo-technologies/",
       },
     ],
   },
@@ -870,22 +870,22 @@ export const CONTACT_INFO = [
 export const SOCIAL_LINKS = [
   {
     name: "Facebook",
-    href: "https://facebook.com/yourpage",
+    href: "https://www.facebook.com/vemzotechnologies",
     icon: FaFacebook,
   },
   {
     name: "Instagram",
-    href: "https://instagram.com/yourhandle",
+    href: "https://www.instagram.com/vemzotechnologies/",
     icon: RxInstagramLogo,
   },
   {
     name: "LinkedIn",
-    href: "https://linkedin.com",
+    href: "linkedin.com/company/vemzo-technologies/",
     icon: RxLinkedinLogo,
   },
   {
     name: "Twitter",
-    href: "https://x.com",
+    href: "https://x.com/vemzotech",
     icon: RxTwitterLogo,
   },
 ] as const;
@@ -929,4 +929,3 @@ export const FOOTER_LINKS = [
 export const LINKS = {
   sourceCode: "https://github.com/",
 };
-

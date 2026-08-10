@@ -22,11 +22,11 @@ import LocationOnRoundedIcon from "@mui/icons-material/LocationOnRounded";
 import { FOOTER_LINKS, SERVICES, SOCIAL_LINKS } from "@/constants";
 
 export const Footer = () => {
-  const [currentYear, setCurrentYear] = useState<number>(2026);
+  const [currentYear, setCurrentYear] = useState(2026);
 
-  // useEffect(() => {
-  //   setCurrentYear(new Date().getFullYear());
-  // }, []);
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
 
   return (
     <Box
@@ -253,7 +253,7 @@ export const Footer = () => {
                   </Typography>
 
                   <Typography variant="body2" sx={{ color: "#fff" }}>
-                    Lahore, Pakistan
+                    432 Jade Ext. St 5, Park View City Lahore, Pakistan
                   </Typography>
                 </Box>
               </Paper>

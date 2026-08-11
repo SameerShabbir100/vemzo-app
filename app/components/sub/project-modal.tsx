@@ -48,6 +48,7 @@ export const ProjectModal = ({ project, open, onClose }: ProjectModalProps) => {
               src={project.image}
               alt={project.title}
               fill
+              unoptimized
               className="object-cover"
             />
 

@@ -41,6 +41,7 @@ export const HomeProjectCard = ({
           src={image}
           alt={title}
           fill
+          unoptimized
           className="
             object-cover
             transition-transform

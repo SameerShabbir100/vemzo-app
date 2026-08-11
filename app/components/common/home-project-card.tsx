@@ -55,6 +55,7 @@ export const HomeProjectCard = ({
           src={image}
           alt={title}
           fill
+          unoptimized
           style={{
             objectFit: "cover",
             transition: "transform 0.5s ease",

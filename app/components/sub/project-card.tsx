@@ -42,6 +42,7 @@ export const ProjectCard = ({
           src={src}
           alt={title}
           fill
+          unoptimized
           className="
             object-cover
             transition-transform

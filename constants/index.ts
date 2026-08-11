@@ -880,7 +880,7 @@ export const SOCIAL_LINKS = [
   },
   {
     name: "LinkedIn",
-    href: "linkedin.com/company/vemzo-technologies/",
+    href: "https://www.linkedin.com/company/vemzo-technologies/",
     icon: RxLinkedinLogo,
   },
   {

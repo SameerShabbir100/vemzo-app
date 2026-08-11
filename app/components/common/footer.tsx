@@ -17,6 +17,7 @@ import {
 } from "@mui/material";
 
 import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
+import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import LocationOnRoundedIcon from "@mui/icons-material/LocationOnRounded";
 
 import { FOOTER_LINKS, SERVICES, SOCIAL_LINKS } from "@/constants";
@@ -222,6 +223,42 @@ export const Footer = () => {
                 </Box>
               </Paper>
 
+              {/* Phone Card */}
+              <Paper
+                elevation={0}
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 2,
+                  p: 2,
+                  bgcolor: "rgba(0, 0, 0, 0.04)",
+                  border: "1px solid rgba(0,220,130,0.15)",
+                  borderRadius: 3,
+                  transition: "all .3s ease",
+                  "&:hover": {
+                    borderColor: "rgba(0,220,130,0.4)",
+                    bgcolor: "rgba(0,220,130,0.05)",
+                  },
+                }}
+              >
+                <PhoneRoundedIcon
+                  sx={{
+                    color: "#00dc82",
+                    fontSize: 24,
+                  }}
+                />
+
+                <Box>
+                  <Typography variant="caption" sx={{ color: "#fff" }}>
+                    Phone
+                  </Typography>
+
+                  <Typography variant="body2" sx={{ color: "#fff" }}>
+                    +92 304 5421167
+                  </Typography>
+                </Box>
+              </Paper>
+
               {/* Address Card */}
               <Paper
                 elevation={0}
@@ -340,7 +377,7 @@ export const Footer = () => {
             . All rights reserved.
           </Typography>
 
-          {/* <Stack
+          <Stack
             direction="row"
             spacing={3}
             sx={{
@@ -365,7 +402,7 @@ export const Footer = () => {
 
             <Link
               component={NextLink}
-              href="/terms"
+              href="/terms-and-conditions"
               underline="none"
               sx={{
                 color: "grey.500",
@@ -380,7 +417,7 @@ export const Footer = () => {
 
             <Link
               component={NextLink}
-              href="/contact"
+              href="/refund-policy"
               underline="none"
               sx={{
                 color: "grey.500",
@@ -390,9 +427,24 @@ export const Footer = () => {
                 },
               }}
             >
-              Contact
+              Refund & Return Policy
             </Link>
-          </Stack> */}
+
+            <Link
+              component={NextLink}
+              href="/service-delivery-policy"
+              underline="none"
+              sx={{
+                color: "grey.500",
+                transition: ".3s",
+                "&:hover": {
+                  color: "#00dc82",
+                },
+              }}
+            >
+              Delivery Policy
+            </Link>
+          </Stack>
         </Box>
       </Container>
     </Box>

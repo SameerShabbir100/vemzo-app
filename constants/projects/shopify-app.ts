@@ -5,10 +5,10 @@ export const shopifyAppDetail: ProjectDetail = {
   title: "Shopify App Development",
   subtitle: "Custom Public or Private Apps to Scale Shopify Functionality",
   category: "Shopify & Extensions",
-  price: "$500",
-  priceNum: 500,
-  originalPrice: "$1,800",
-  deliveryTime: "5 - 7 Days",
+  price: "$1,600 (PKR 448,000)",
+  priceNum: 1600,
+  originalPrice: "$2,900 (PKR 812,000)",
+  deliveryTime: "8 - 12 Days",
   heroBadge: "Custom Shopify Extension",
   description:
     "Build high-performance embedded or standalone Shopify apps using Node.js, Remix/Next.js, and GraphQL to automate merchant workflows or monetize on the Shopify App Store.",
@@ -28,11 +28,11 @@ export const shopifyAppDetail: ProjectDetail = {
     tools: ["Shopify CLI 3.0", "App Bridge v3", "OAuth 2.0 Auth"],
   },
   addOnPackages: [
-    { id: "app-store-submission", title: "🚀 Official Shopify App Store Submission Assistance", price: 100, description: "Complete App Store listing setup, privacy policy compliance & review submission guidance.", badge: "Recommended" },
-    { id: "billing-tiers", title: "💳 Multi-Tier Subscription Billing Engine", price: 70, description: "Add Free, Starter, Pro & Enterprise recurring monthly app billing plans." },
-    { id: "webhook-queue", title: "⚡ Redis & BullMQ High-Speed Webhook Queue", price: 80, description: "Process up to 10,000 order webhooks per minute with zero rate-limiting drops." },
-    { id: "ai-assistant", title: "🤖 AI Smart Merchant Assistant", price: 90, description: "AI-generated product descriptions & automated merchant recommendation engine." },
-    { id: "multi-store", title: "🏪 Multi-Store Single Sign-On (SSO)", price: 80, description: "Allow enterprise merchants to sync multiple Shopify stores under one app account." },
+    { id: "app-store-submission", title: "🚀 Official Shopify App Store Submission Assistance", price: 98000, description: "Complete App Store listing setup, privacy policy compliance & review submission guidance.", badge: "Recommended" },
+    { id: "billing-tiers", title: "💳 Multi-Tier Subscription Billing Engine", price: 78400, description: "Add Free, Starter, Pro & Enterprise recurring monthly app billing plans." },
+    { id: "webhook-queue", title: "⚡ Redis & BullMQ High-Speed Webhook Queue", price: 70000, description: "Process up to 10,000 order webhooks per minute with zero rate-limiting drops." },
+    { id: "ai-assistant", title: "🤖 AI Smart Merchant Assistant", price: 89600, description: "AI-generated product descriptions & automated merchant recommendation engine." },
+    { id: "multi-store", title: "🏪 Multi-Store Single Sign-On (SSO)", price: 81200, description: "Allow enterprise merchants to sync multiple Shopify stores under one app account." },
   ],
   features: [
     {

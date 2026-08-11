@@ -5,10 +5,10 @@ export const crmSystemsDetail: ProjectDetail = {
   title: "Custom CRM Systems",
   subtitle: "Turnkey Customer Relationship & Lead Pipeline Management Platform",
   category: "Business Automation",
-  price: "$500",
-  priceNum: 500,
-  originalPrice: "$1,600",
-  deliveryTime: "4 - 6 Days",
+  price: "$1,800 (PKR 504,000)",
+  priceNum: 1800,
+  originalPrice: "$2,700 (PKR 756,000)",
+  deliveryTime: "8 - 12 Days",
   heroBadge: "Sales & Lead Automation",
   description:
     "Empower your sales team with a custom CRM system designed to track leads, manage customer interactions, automate deal pipelines, and increase closing rates.",
@@ -28,11 +28,11 @@ export const crmSystemsDetail: ProjectDetail = {
     tools: ["Stripe Webhooks", "SendGrid Email API", "CSV Data Import/Export"],
   },
   addOnPackages: [
-    { id: "email-drip", title: "📧 Automated Email Drip Sequence Engine", price: 80, description: "Trigger multi-step follow-up email campaigns based on Kanban pipeline stage changes.", badge: "Recommended" },
-    { id: "whatsapp-crm", title: "💬 WhatsApp Business API Lead Chat Sync", price: 90, description: "Send & receive WhatsApp messages directly inside customer CRM contact profiles." },
-    { id: "ai-lead-score", title: "🤖 AI Lead Scoring & Win Probability Pack", price: 85, description: "Predict lead conversion probability using AI history & engagement behavior." },
-    { id: "calendar-sync", title: "📅 Google Calendar & Zoom Meeting Integration", price: 60, description: "Auto-schedule Zoom meetings & sync reminders with Google/Outlook calendars." },
-    { id: "proposal-builder", title: "📄 PDF Quotation & Proposal Generator", price: 70, description: "Generate & send branded PDF proposals with electronic signature capture." },
+    { id: "email-drip", title: "📧 Automated Email Drip Sequence Engine", price: 70000, description: "Trigger multi-step follow-up email campaigns based on Kanban pipeline stage changes.", badge: "Recommended" },
+    { id: "whatsapp-crm", title: "💬 WhatsApp Business API Lead Chat Sync", price: 89600, description: "Send & receive WhatsApp messages directly inside customer CRM contact profiles." },
+    { id: "ai-lead-score", title: "🤖 AI Lead Scoring & Win Probability Pack", price: 81200, description: "Predict lead conversion probability using AI history & engagement behavior." },
+    { id: "calendar-sync", title: "📅 Google Calendar & Zoom Meeting Integration", price: 50400, description: "Auto-schedule Zoom meetings & sync reminders with Google/Outlook calendars." },
+    { id: "proposal-builder", title: "📄 PDF Quotation & Proposal Generator", price: 61600, description: "Generate & send branded PDF proposals with electronic signature capture." },
   ],
   features: [
     {
@@ -135,7 +135,7 @@ export const crmSystemsDetail: ProjectDetail = {
     {
       question: "Are there any monthly recurring user fees?",
       answer:
-        "No! You purchase the full source code once for $500 and host it on your own server with unlimited users.",
+        "No! You purchase the full source code once for $1,800 (PKR 504,000) and host it on your own server with unlimited users.",
     },
     {
       question: "Can we import our existing customer spreadsheet?",

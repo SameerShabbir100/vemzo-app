@@ -5,10 +5,10 @@ export const hrmSystemsDetail: ProjectDetail = {
   title: "HRM Systems",
   subtitle: "Complete Human Resource, Payroll & Attendance Management",
   category: "Enterprise Systems",
-  price: "$500",
-  priceNum: 500,
-  originalPrice: "$1,800",
-  deliveryTime: "4 - 6 Days",
+  price: "$1,400 (PKR 392,000)",
+  priceNum: 1400,
+  originalPrice: "$2,000 (PKR 560,000)",
+  deliveryTime: "10 - 14 Days",
   heroBadge: "Workforce Management",
   description:
     "Streamline workforce management, employee records, attendance tracking, leave applications, and automated payroll calculations with our all-in-one HRM software.",
@@ -28,11 +28,11 @@ export const hrmSystemsDetail: ProjectDetail = {
     tools: ["Biometric Device API", "Excel Exporter", "SMTP Alerts"],
   },
   addOnPackages: [
-    { id: "biometric", title: "🖐️ Biometric Fingerprint Hardware Sync API", price: 90, description: "Connect ZKTeco / Hikvision biometric attendance devices directly to cloud HRM.", badge: "Popular" },
-    { id: "geo-attendance", title: "📍 GPS Mobile Geo-Fencing Attendance Pack", price: 70, description: "Allow remote & field staff to clock-in only when inside approved GPS coordinates." },
-    { id: "tax-calc", title: "💰 Multi-Country Tax & Overtime Formula Engine", price: 80, description: "Customizable local tax brackets, provident fund & overtime multiplier calculations." },
-    { id: "performance", title: "🎯 KPI & Quarterly Performance Appraisal Pack", price: 75, description: "Employee goal tracking, manager review scores & annual appraisal reports." },
-    { id: "bank-file", title: "🏦 Direct Bank Bulk Salary Payment File Exporter", price: 60, description: "Generate bank-specific CSV/TXT files for 1-click batch payroll disbursement." },
+    { id: "biometric", title: "🖐️ Biometric Fingerprint Hardware Sync API", price: 106400, description: "Connect ZKTeco / Hikvision biometric attendance devices directly to cloud HRM.", badge: "Popular" },
+    { id: "geo-attendance", title: "📍 GPS Mobile Geo-Fencing Attendance Pack", price: 70000, description: "Allow remote & field staff to clock-in only when inside approved GPS coordinates." },
+    { id: "tax-calc", title: "💰 Multi-Country Tax & Overtime Formula Engine", price: 78400, description: "Customizable local tax brackets, provident fund & overtime multiplier calculations." },
+    { id: "performance", title: "🎯 KPI & Quarterly Performance Appraisal Pack", price: 72800, description: "Employee goal tracking, manager review scores & annual appraisal reports." },
+    { id: "bank-file", title: "🏦 Direct Bank Bulk Salary Payment File Exporter", price: 61600, description: "Generate bank-specific CSV/TXT files for 1-click batch payroll disbursement." },
   ],
   features: [
     {

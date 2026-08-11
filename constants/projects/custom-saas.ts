@@ -5,10 +5,10 @@ export const customSaasDetail: ProjectDetail = {
   title: "Custom SaaS Applications",
   subtitle: "Production-Ready Multi-Tenant SaaS Boilerplate & Product Build",
   category: "SaaS & Cloud Software",
-  price: "$500",
-  priceNum: 500,
-  originalPrice: "$2,200",
-  deliveryTime: "5 - 7 Days",
+  price: "Starting from $2,200 (PKR 616,000)",
+  priceNum: 2200,
+  originalPrice: "$3,900 (PKR 1,092,000)",
+  deliveryTime: "14 - 21 Days",
   heroBadge: "SaaS Foundation Product",
   description:
     "Turn your software idea into a scalable, revenue-generating SaaS product with multi-tenancy, subscription billing, user authentication, and admin dashboards.",
@@ -21,18 +21,59 @@ export const customSaasDetail: ProjectDetail = {
     "Micro-SaaS & Niche Business Tools",
   ],
   techStack: {
-    frontend: ["Next.js 15 (App Router)", "React 19", "Tailwind CSS v4", "TypeScript"],
-    backend: ["Node.js", "Express / Next API Routes", "Stripe SDK", "Resend API"],
+    frontend: [
+      "Next.js 15 (App Router)",
+      "React 19",
+      "Tailwind CSS v4",
+      "TypeScript",
+    ],
+    backend: [
+      "Node.js",
+      "Express / Next API Routes",
+      "Stripe SDK",
+      "Resend API",
+    ],
     database: ["PostgreSQL", "Prisma ORM", "Redis Session Store"],
     cloud: ["Vercel", "AWS S3", "Supabase / Neon DB"],
     tools: ["Auth.js / Clerk", "Zod Validation", "Lucide Icons"],
   },
   addOnPackages: [
-    { id: "ai-wrapper", title: "🤖 OpenAI / Claude API Wrapper Integration", price: 100, description: "Connect OpenAI/Claude API models with token usage tracking & prompt templates.", badge: "Popular" },
-    { id: "usage-billing", title: "📊 Usage-Based Metered Billing Engine", price: 80, description: "Charge users based on API calls, AI tokens, or storage gigabytes via Stripe." },
-    { id: "tenant-domain", title: "🌐 Custom Tenant Subdomain & CNAME Engine", price: 90, description: "Allow customers to map their own custom domain (e.g. app.client.com)." },
-    { id: "analytics-chart", title: "📈 Chart.js & ApexCharts Analytics Suite", price: 70, description: "Interactive financial MRR/ARR charts & real-time tenant activity dashboards." },
-    { id: "sso-saml", title: "🔒 SAML / Enterprise SSO Login Pack", price: 110, description: "Enable Okta, Azure AD & SAML 2.0 single sign-on for enterprise clients." },
+    {
+      id: "ai-wrapper",
+      title: "🤖 OpenAI / Claude API Wrapper Integration",
+      price: 137200,
+      description:
+        "Connect OpenAI/Claude API models with token usage tracking & prompt templates.",
+      badge: "Popular",
+    },
+    {
+      id: "usage-billing",
+      title: "📊 Usage-Based Metered Billing Engine",
+      price: 106400,
+      description:
+        "Charge users based on API calls, AI tokens, or storage gigabytes via Stripe.",
+    },
+    {
+      id: "tenant-domain",
+      title: "🌐 Custom Tenant Subdomain & CNAME Engine",
+      price: 98000,
+      description:
+        "Allow customers to map their own custom domain (e.g. app.client.com).",
+    },
+    {
+      id: "analytics-chart",
+      title: "📈 Chart.js & ApexCharts Analytics Suite",
+      price: 78400,
+      description:
+        "Interactive financial MRR/ARR charts & real-time tenant activity dashboards.",
+    },
+    {
+      id: "sso-saml",
+      title: "🔒 SAML / Enterprise SSO Login Pack",
+      price: 126000,
+      description:
+        "Enable Okta, Azure AD & SAML 2.0 single sign-on for enterprise clients.",
+    },
   ],
   features: [
     {
@@ -101,22 +142,26 @@ export const customSaasDetail: ProjectDetail = {
     {
       step: "01",
       title: "Architecture & Data Model Definition",
-      description: "Finalize your core SaaS features, subscription tiers, and pricing strategy.",
+      description:
+        "Finalize your core SaaS features, subscription tiers, and pricing strategy.",
     },
     {
       step: "02",
       title: "SaaS Codebase & Stripe Integration",
-      description: "Configure multi-tenant database, Stripe webhooks, team workspaces, and auth.",
+      description:
+        "Configure multi-tenant database, Stripe webhooks, team workspaces, and auth.",
     },
     {
       step: "03",
       title: "Deployment & Domain Linking",
-      description: "Deploy to Vercel with Neon/Supabase PostgreSQL DB and connect your custom domain.",
+      description:
+        "Deploy to Vercel with Neon/Supabase PostgreSQL DB and connect your custom domain.",
     },
     {
       step: "04",
       title: "Code Handover & 30-Day Support",
-      description: "Transfer complete GitHub repository, documentation, and provide 30 days of support.",
+      description:
+        "Transfer complete GitHub repository, documentation, and provide 30 days of support.",
     },
   ],
   deliverables: [

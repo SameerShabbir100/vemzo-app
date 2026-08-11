@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `${project.title} ($500 Complete Package) | Vemzo Technologies`,
+    title: `${project.title} (${project.price} Complete Package) | Vemzo Technologies`,
     description: project.description,
   };
 }
@@ -58,6 +58,20 @@ export default async function ServiceDetailPage({ params }: PageProps) {
     `Hi Vemzo Technologies! I want to purchase the "${project.title}" package for ${project.price}. Please share payment & delivery instructions.`
   );
 
+  const matchPrice = project.price.match(/^(.*?)(?:\s*\((PKR\s*[\d,]+)\))?$/i);
+  const mainPriceUsd = matchPrice ? matchPrice[1].trim() : project.price;
+  const mainPricePkr = matchPrice && matchPrice[2] ? matchPrice[2].trim() : null;
+
+  const matchOrig = project.originalPrice.match(/^(.*?)(?:\s*\((PKR\s*[\d,]+)\))?$/i);
+  const origPriceUsd = matchOrig ? matchOrig[1].trim() : project.originalPrice;
+  const origPricePkr = matchOrig && matchOrig[2] ? matchOrig[2].trim() : null;
+
+  const firstNumMatch = project.originalPrice.match(/\$?\s*([0-9,]+)/);
+  const origPriceNum = firstNumMatch ? parseInt(firstNumMatch[1].replace(/,/g, ""), 10) : project.priceNum * 2;
+  const discountPercentage = project.priceNum < origPriceNum
+    ? Math.round(((origPriceNum - project.priceNum) / origPriceNum) * 100)
+    : 0;
+
   return (
     <main className="min-h-screen bg-black text-white py-8 sm:py-12 px-4 sm:px-6 lg:px-8 overflow-x-hidden">
       {/* Navigation Breadcrumb */}
@@ -75,21 +89,25 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         </span>
       </div>
 
-      {/* Hero Section */}
-      <section className="relative max-w-7xl mx-auto mb-12 sm:mb-16 rounded-2xl sm:rounded-3xl border border-[rgba(0,220,130,0.2)] bg-[radial-gradient(ellipse_at_top,rgba(0,220,130,0.14),transparent_75%)] p-5 sm:p-8 md:p-12 overflow-hidden">
-        <div className="relative z-10 grid lg:grid-cols-12 gap-8 lg:gap-10 items-center">
-          {/* Left Hero Column */}
-          <div className="lg:col-span-8 flex flex-col items-start gap-4 sm:gap-6">
-            <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full border border-[rgba(0,220,130,0.3)] bg-[rgba(0,220,130,0.1)] text-[#00dc82] text-xs sm:text-sm font-bold tracking-wide">
-              <RocketLaunchIcon sx={{ fontSize: 16 }} />
-              {project.heroBadge}
+      {/* Header & Hero Section */}
+      <section className="max-w-7xl mx-auto mb-12 sm:mb-16">
+        <div className="grid lg:grid-cols-12 gap-8 items-start">
+          {/* Main Info */}
+          <div className="lg:col-span-8 space-y-4">
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="px-3 py-1 rounded-full text-xs font-semibold bg-[rgba(0,220,130,0.12)] text-[#00dc82] border border-[rgba(0,220,130,0.25)]">
+                {project.category}
+              </span>
+              <span className="px-3 py-1 rounded-full text-xs font-semibold bg-gray-900 text-gray-300 border border-gray-800">
+                {project.heroBadge}
+              </span>
             </div>
 
-            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+            <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
               {project.title}
             </h1>
 
-            <p className="text-base sm:text-lg md:text-xl text-[#00dc82] font-semibold">
+            <p className="text-lg sm:text-xl font-medium text-[#00dc82]">
               {project.subtitle}
             </p>
 
@@ -117,20 +135,38 @@ export default async function ServiceDetailPage({ params }: PageProps) {
           {/* Pricing Box */}
           <div className="lg:col-span-4 w-full">
             <div className="rounded-2xl sm:rounded-3xl border border-[rgba(0,220,130,0.4)] bg-[#09090b] p-6 sm:p-8 shadow-2xl relative overflow-hidden">
-              <div className="absolute top-0 right-0 bg-[#00dc82] text-black font-extrabold text-[10px] sm:text-xs uppercase px-3 sm:px-4 py-1 rounded-bl-xl tracking-wider">
+              <div className="absolute top-0 right-0 bg-[#00dc82] text-black font-extrabold text-[10px] sm:text-xs uppercase px-3 sm:px-4 py-1 rounded-bl-xl tracking-wider z-10">
                 Complete Package
               </div>
 
-              <div className="text-gray-400 text-xs font-semibold uppercase tracking-wider mb-2">Fixed Package Price</div>
+              <div className="text-gray-400 text-xs font-semibold uppercase tracking-wider mb-3">Fixed Package Price</div>
 
-              <div className="flex items-baseline gap-2 sm:gap-3 mb-3">
-                <span className="text-4xl sm:text-5xl font-black text-white">{project.price}</span>
-                <span className="text-base sm:text-lg text-gray-500 line-through font-semibold">
-                  {project.originalPrice}
-                </span>
-                <span className="text-[10px] sm:text-xs text-[#00dc82] font-bold bg-[rgba(0,220,130,0.15)] px-2 sm:px-2.5 py-1 rounded-md">
-                  SAVE 70%
-                </span>
+              {/* Clean Structured Pricing Block */}
+              <div className="flex flex-col gap-2.5 mb-5">
+                <div className="flex items-baseline flex-wrap gap-2.5">
+                  <span className="text-3xl sm:text-4xl font-black text-white tracking-tight">{mainPriceUsd}</span>
+                  <span className="text-sm sm:text-base text-gray-500 line-through font-medium">
+                    {origPriceUsd}
+                  </span>
+                  {discountPercentage > 0 && (
+                    <span className="text-[10px] sm:text-xs text-[#00dc82] font-bold bg-[rgba(0,220,130,0.15)] border border-[rgba(0,220,130,0.3)] px-2 py-0.5 rounded-md">
+                      SAVE {discountPercentage}%
+                    </span>
+                  )}
+                </div>
+
+                {mainPricePkr && (
+                  <div className="flex items-center gap-2 pt-2 border-t border-gray-800/80">
+                    <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-bold bg-[rgba(0,220,130,0.12)] text-[#00dc82] border border-[rgba(0,220,130,0.25)]">
+                      🇵🇰 {mainPricePkr}
+                    </span>
+                    {origPricePkr && (
+                      <span className="text-xs text-gray-500 line-through">
+                        {origPricePkr}
+                      </span>
+                    )}
+                  </div>
+                )}
               </div>
 
               <p className="text-xs text-gray-400 mb-6 leading-relaxed">
@@ -145,7 +181,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                   className="w-full flex items-center justify-center gap-2 py-3.5 sm:py-4 px-5 rounded-xl bg-[#00dc82] hover:bg-[#00c675] text-black font-bold text-sm sm:text-base transition-all shadow-lg hover:shadow-[0_0_25px_rgba(0,220,130,0.4)]"
                 >
                   <WhatsAppIcon sx={{ fontSize: 20 }} />
-                  Order Package ({project.price})
+                  Order Package ({mainPriceUsd})
                 </a>
 
                 <Link
@@ -237,7 +273,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
       <section className="max-w-7xl mx-auto mb-16 sm:mb-20">
         <ProjectAddOnCalculator
           projectTitle={project.title}
-          basePrice={project.priceNum || 500}
+          basePrice={project.priceNum}
           addOns={project.addOnPackages || []}
         />
       </section>
@@ -405,7 +441,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             Why Choose Vemzo
           </span>
           <h2 className="text-2xl sm:text-4xl font-bold text-white">
-            Vemzo $500 Package vs. <span className="text-[#00dc82]">Traditional Options</span>
+            Vemzo {project.price} Package vs. <span className="text-[#00dc82]">Traditional Options</span>
           </h2>
         </div>
 
@@ -415,7 +451,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             <thead>
               <tr className="border-b border-gray-800 bg-[rgba(255,255,255,0.02)]">
                 <th className="p-4 sm:p-5 font-bold text-white">Comparison Criteria</th>
-                <th className="p-4 sm:p-5 font-bold text-[#00dc82] bg-[rgba(0,220,130,0.08)]">Vemzo Package ($500)</th>
+                <th className="p-4 sm:p-5 font-bold text-[#00dc82] bg-[rgba(0,220,130,0.08)]">Vemzo Package ({project.price})</th>
                 <th className="p-4 sm:p-5 font-bold text-gray-400">Agency Build</th>
                 <th className="p-4 sm:p-5 font-bold text-gray-400">Freelancer Marketplace</th>
               </tr>
@@ -423,7 +459,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             <tbody className="divide-y divide-gray-800 text-gray-300">
               <tr>
                 <td className="p-4 sm:p-5 font-semibold text-white">Total Cost</td>
-                <td className="p-4 sm:p-5 font-bold text-[#00dc82] bg-[rgba(0,220,130,0.08)]">$500 Flat (One-Time)</td>
+                <td className="p-4 sm:p-5 font-bold text-[#00dc82] bg-[rgba(0,220,130,0.08)]">{project.price} Flat (One-Time)</td>
                 <td className="p-4 sm:p-5 text-gray-400">$3,500 - $10,000+</td>
                 <td className="p-4 sm:p-5 text-gray-400">$1,200 - $3,000</td>
               </tr>
@@ -463,14 +499,14 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             Fulfillment Process
           </span>
           <h2 className="text-2xl sm:text-4xl font-bold text-white">
-            What Happens After You <span className="text-[#00dc82]">Purchase ($500)</span>
+            What Happens After You <span className="text-[#00dc82]">Purchase ({project.price})</span>
           </h2>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {project.deliverySteps.map((step, index) => (
             <div key={index} className="rounded-2xl border border-gray-800 bg-[#09090b] p-5 sm:p-6 relative">
-              <div className="text-3xl sm:text-4xl font-black text-[rgba(0,220,130,0.25)] mb-2 sm:mb-3">{step.step}</div>
+              <div className="text-3xl sm:text-4xl font-black text-[#00dc8240] mb-2 sm:mb-3">{step.step}</div>
               <h3 className="text-base sm:text-lg font-bold text-white mb-2">{step.title}</h3>
               <p className="text-gray-400 text-xs leading-relaxed">{step.description}</p>
             </div>
@@ -479,7 +515,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
       </section>
 
       {/* Deliverables Box */}
-      <section className="max-w-7xl mx-auto mb-16 sm:mb-20 rounded-2xl sm:rounded-3xl border border-[rgba(0,220,130,0.3)] bg-[radial-gradient(circle_at_top,rgba(0,220,130,0.08),transparent_80%)] p-6 sm:p-10 md:p-12">
+      <section className="max-w-7xl mx-auto mb-16 sm:mb-20 rounded-2xl sm:rounded-3xl border border-[#00dc824d] bg-[radial-gradient(circle_at_top,#00dc8214,transparent_80%)] p-6 sm:p-10 md:p-12">
         <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-8">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">Complete Package Deliverables</h2>
           <p className="text-xs sm:text-sm text-gray-400">
@@ -522,7 +558,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
       </section>
 
       {/* Final Call to Action */}
-      <section className="max-w-7xl mx-auto text-center rounded-2xl sm:rounded-3xl border border-[rgba(0,220,130,0.4)] bg-[radial-gradient(ellipse_at_center,rgba(0,220,130,0.18),transparent_70%)] p-6 sm:p-12 md:p-16">
+      <section className="max-w-7xl mx-auto text-center rounded-2xl sm:rounded-3xl border border-[#00dc8266] bg-[radial-gradient(ellipse_at_center,#00dc822e,transparent_70%)] p-6 sm:p-12 md:p-16">
         <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white mb-3 sm:mb-4">
           Get Your Complete Package For <span className="text-[#00dc82]">{project.price}</span>
         </h2>

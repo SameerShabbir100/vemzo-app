@@ -5,9 +5,9 @@ export const shopifyStoreDetail: ProjectDetail = {
   title: "Shopify Store Development",
   subtitle: "High-Converting Custom E-Commerce Store Built for Scale",
   category: "Shopify & E-Commerce",
-  price: "$500",
-  priceNum: 500,
-  originalPrice: "$1,500",
+  price: "$950 (PKR 266,000)",
+  priceNum: 950,
+  originalPrice: "$1,400 (PKR 392,000)",
   deliveryTime: "3 - 5 Days",
   heroBadge: "Complete E-Commerce Solution",
   description:
@@ -28,12 +28,12 @@ export const shopifyStoreDetail: ProjectDetail = {
     tools: ["Klaviyo", "Google Analytics 4", "Meta Pixel", "PageFly / Shogun Builder"],
   },
   addOnPackages: [
-    { id: "ai-bot", title: "🤖 AI Customer Support Chatbot (GPT-4)", price: 90, description: "Automated 24/7 AI shopping assistant & product recommender integrated into storefront.", badge: "Popular" },
-    { id: "analytics", title: "📊 Advanced Sales Analytics & Charting Pack", price: 60, description: "Interactive visual sales, profit margin & customer lifetime value dashboard." },
-    { id: "reviews", title: "⭐ Photo & Video Product Reviews Import", price: 50, description: "Bulk review importer from Amazon/AliExpress with photo popups & star badges." },
-    { id: "klaviyo", title: "📧 Advanced Klaviyo Email Automation Pack", price: 80, description: "5 Pre-built email flows (Welcome, Abandoned Cart, Win-Back, VIP, Cross-Sell)." },
-    { id: "multi-currency", title: "🌐 Geo-IP Auto Currency & Multi-Language", price: 60, description: "Automatic country detection with 15+ currency conversions & translations." },
-    { id: "speed", title: "⚡ Extreme PageSpeed 95+ Boost Pack", price: 70, description: "Advanced image WebP compression, critical CSS inline & lazy loading optimization." },
+    { id: "ai-bot", title: "🤖 AI Customer Support Chatbot (GPT-4)", price: 70000, description: "Automated 24/7 AI shopping assistant & product recommender integrated into storefront.", badge: "Popular" },
+    { id: "analytics", title: "📊 Advanced Sales Analytics & Charting Pack", price: 42000, description: "Interactive visual sales, profit margin & customer lifetime value dashboard." },
+    { id: "reviews", title: "⭐ Photo & Video Product Reviews Import", price: 33600, description: "Bulk review importer from Amazon/AliExpress with photo popups & star badges." },
+    { id: "klaviyo", title: "📧 Advanced Klaviyo Email Automation Pack", price: 56000, description: "5 Pre-built email flows (Welcome, Abandoned Cart, Win-Back, VIP, Cross-Sell)." },
+    { id: "multi-currency", title: "🌐 Geo-IP Auto Currency & Multi-Language", price: 50400, description: "Automatic country detection with 15+ currency conversions & translations." },
+    { id: "speed", title: "⚡ Extreme PageSpeed 95+ Boost Pack", price: 50400, description: "Advanced image WebP compression, critical CSS inline & lazy loading optimization." },
   ],
   features: [
     {
@@ -150,7 +150,7 @@ export const shopifyStoreDetail: ProjectDetail = {
         "Absolutely. We build using Shopify's drag-and-drop theme editor so you can easily update banners, text, prices, and products without writing code.",
     },
     {
-      question: "What is included in the $500 package?",
+      question: "What is included in the $950 (PKR 266,000) package?",
       answer:
         "The package covers full custom design, theme setup, payment integration, responsive mobile optimization, product imports, domain connection, and 30 days of support.",
     },

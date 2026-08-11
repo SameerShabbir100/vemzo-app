@@ -5,10 +5,10 @@ export const posSystemsDetail: ProjectDetail = {
   title: "POS Systems for Retail",
   subtitle: "Modern Point of Sale & Multi-Store Inventory Management System",
   category: "Enterprise Systems",
-  price: "$500",
-  priceNum: 500,
-  originalPrice: "$2,000",
-  deliveryTime: "5 - 7 Days",
+  price: "$2,100 (PKR 588,000)",
+  priceNum: 2100,
+  originalPrice: "$2,800 (PKR 784,000)",
+  deliveryTime: "12 - 15 Days",
   heroBadge: "Retail & Commerce POS",
   description:
     "Streamline checkout operations, barcode scanning, stock tracking, and sales analytics across physical retail stores and online channels with our cloud-based POS software.",
@@ -28,11 +28,11 @@ export const posSystemsDetail: ProjectDetail = {
     tools: ["ESC/POS Thermal Printing", "Barcode Reader Web API", "Export PDF/Excel"],
   },
   addOnPackages: [
-    { id: "pwa-app", title: "📱 iOS & Android Mobile PWA POS App Pack", price: 90, description: "Downloadable mobile POS app for sales reps & floor staff with Bluetooth printer support.", badge: "Popular" },
-    { id: "loyalty", title: "🎁 Customer Loyalty Points & Store Credit System", price: 70, description: "Reward customers with points per purchase, gift cards & store credit redemption." },
-    { id: "whatsapp-receipts", title: "💬 WhatsApp Digital E-Receipt Bot", price: 60, description: "Automatically send branded invoice PDF & receipt links directly to customer WhatsApp." },
-    { id: "multi-branch", title: "🏬 Multi-Branch Stock Transfer & Sync Engine", price: 80, description: "Transfer inventory between branches with real-time stock availability updates." },
-    { id: "hardware-pack", title: "🖨️ Thermal Printer & Barcode Scanner Integration Pack", price: 50, description: "Custom ESC/POS printer layout styling, cash drawer trigger & barcode printer setup." },
+    { id: "pwa-app", title: "📱 iOS & Android Mobile PWA POS App Pack", price: 126000, description: "Downloadable mobile POS app for sales reps & floor staff with Bluetooth printer support.", badge: "Popular" },
+    { id: "loyalty", title: "🎁 Customer Loyalty Points & Store Credit System", price: 78400, description: "Reward customers with points per purchase, gift cards & store credit redemption." },
+    { id: "whatsapp-receipts", title: "💬 WhatsApp Digital E-Receipt Bot", price: 61600, description: "Automatically send branded invoice PDF & receipt links directly to customer WhatsApp." },
+    { id: "multi-branch", title: "🏬 Multi-Branch Stock Transfer & Sync Engine", price: 98000, description: "Transfer inventory between branches with real-time stock availability updates." },
+    { id: "hardware-pack", title: "🖨️ Thermal Printer & Barcode Scanner Integration Pack", price: 56000, description: "Custom ESC/POS printer layout styling, cash drawer trigger & barcode printer setup." },
   ],
   features: [
     {

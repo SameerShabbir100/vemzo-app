@@ -5,10 +5,10 @@ export const lmsPlatformsDetail: ProjectDetail = {
   title: "LMS Platforms",
   subtitle: "Scalable E-Learning & Course Creation Portal with Video Streaming",
   category: "EdTech & Learning",
-  price: "$500",
-  priceNum: 500,
-  originalPrice: "$1,750",
-  deliveryTime: "4 - 6 Days",
+  price: "$1,900 (PKR 532,000)",
+  priceNum: 1900,
+  originalPrice: "$2,350 (PKR 658,000)",
+  deliveryTime: "10 - 14 Days",
   heroBadge: "EdTech & Course Portal",
   description:
     "Launch your own online academy, training portal, or course marketplace equipped with video lessons, quizzes, progress tracking, and certificate generation.",
@@ -28,11 +28,11 @@ export const lmsPlatformsDetail: ProjectDetail = {
     tools: ["PDFkit Certificate Engine", "Quizzes Engine", "Stripe Checkout"],
   },
   addOnPackages: [
-    { id: "multi-instructor", title: "👨‍🏫 Multi-Instructor Marketplace & Commission Split", price: 90, description: "Allow external teachers to sign up, create courses & earn sales commissions.", badge: "Popular" },
-    { id: "live-zoom", title: "📹 Live Zoom / Google Meet Webinar Integration", price: 80, description: "Schedule live interactive classes directly inside course lesson modules." },
-    { id: "drip-content", title: "⏳ Drip Feed Lesson Release Scheduler", price: 60, description: "Release lessons on a daily or weekly schedule after student enrollment date." },
-    { id: "discussion-forum", title: "💬 Student Community Forum & Q&A Board", price: 70, description: "In-lesson Q&A discussion board with instructor marked answers & upvotes." },
-    { id: "custom-cert", title: "📜 Custom Designer PDF Certificate Builder", price: 50, description: "Dynamic certificate designer with custom badges, QR verification code & signatures." },
+    { id: "multi-instructor", title: "👨‍🏫 Multi-Instructor Marketplace & Commission Split", price: 112000, description: "Allow external teachers to sign up, create courses & earn sales commissions.", badge: "Popular" },
+    { id: "live-zoom", title: "📹 Live Zoom / Google Meet Webinar Integration", price: 78400, description: "Schedule live interactive classes directly inside course lesson modules." },
+    { id: "drip-content", title: "⏳ Drip Feed Lesson Release Scheduler", price: 56000, description: "Release lessons on a daily or weekly schedule after student enrollment date." },
+    { id: "discussion-forum", title: "💬 Student Community Forum & Q&A Board", price: 70000, description: "In-lesson Q&A discussion board with instructor marked answers & upvotes." },
+    { id: "custom-cert", title: "📜 Custom Designer PDF Certificate Builder", price: 50400, description: "Dynamic certificate designer with custom badges, QR verification code & signatures." },
   ],
   features: [
     {

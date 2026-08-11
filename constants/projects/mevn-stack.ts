@@ -6,10 +6,10 @@ export const mevnStackDetail: ProjectDetail = {
   subtitle:
     "Modern Full-Stack Apps Built with Vue.js, Nuxt.js, Node.js, Express.js & MongoDB",
   category: "Full-Stack Web Apps",
-  price: "$500",
-  priceNum: 500,
-  originalPrice: "$1,800",
-  deliveryTime: "4 - 6 Days",
+  price: "$1,200 (PKR 336,000)",
+  priceNum: 1200,
+  originalPrice: "$1,500 (PKR 420,000)",
+  deliveryTime: "7 - 10 Days",
   heroBadge: "Vue.js & Nuxt.js Web Solution",
   description:
     "Develop ultra-fast, SEO-optimized web applications with Vue.js 3, Nuxt.js, Node.js, Express.js and MongoDB engineered for smooth transitions and rich user interfaces.",
@@ -32,7 +32,7 @@ export const mevnStackDetail: ProjectDetail = {
     {
       id: "nuxt-seo",
       title: "🚀 Nuxt 3 Extreme SEO & OpenGraph Image Suite",
-      price: 70,
+      price: 61600,
       description:
         "Automated dynamic meta tags, XML sitemaps, robots.txt & og:image generators.",
       badge: "Recommended",
@@ -40,21 +40,21 @@ export const mevnStackDetail: ProjectDetail = {
     {
       id: "pinia-store",
       title: "📦 Pinia Store Persistence & Multi-Tab Sync",
-      price: 60,
+      price: 50400,
       description:
         "Persist user session, dark mode & cart state across browser tabs & page reloads.",
     },
     {
       id: "vue-charts",
       title: "📊 Vue-ChartJS Interactive Dashboard Widgets",
-      price: 70,
+      price: 70000,
       description:
         "Real-time Vue data charts, statistics progress circles & analytical cards.",
     },
     {
       id: "pwa-module",
       title: "📱 Nuxt PWA Mobile Installation Module",
-      price: 65,
+      price: 53200,
       description:
         "Convert Nuxt app to downloadable mobile PWA with offline caching capabilities.",
     },

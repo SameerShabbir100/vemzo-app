@@ -5,10 +5,10 @@ export const mernStackDetail: ProjectDetail = {
   title: "MERN Stack Development",
   subtitle: "Custom Full-Stack Web Application (MongoDB, Express, React, Node)",
   category: "Full-Stack Web Apps",
-  price: "$500",
-  priceNum: 500,
-  originalPrice: "$1,800",
-  deliveryTime: "4 - 6 Days",
+  price: "$1,100 (PKR 308,000)",
+  priceNum: 1100,
+  originalPrice: "$1,800 (PKR 504,000)",
+  deliveryTime: "7 - 10 Days",
   heroBadge: "Full-Stack Custom App",
   description:
     "Build fast, scalable, and dynamic web applications tailored precisely to your business specification using the proven MERN stack ecosystem.",
@@ -28,11 +28,11 @@ export const mernStackDetail: ProjectDetail = {
     tools: ["Postman API Specs", "ESLint", "Prettier"],
   },
   addOnPackages: [
-    { id: "realtime-chat", title: "💬 Socket.io Real-Time Live Chat & Rooms", price: 80, description: "Instant 1-on-1 & group messaging with online presence status & typing indicators.", badge: "Popular" },
-    { id: "redux-state", title: "📦 Redux Toolkit Global State & Caching Suite", price: 60, description: "Pre-configured Redux store with RTK Query for automated cache invalidation." },
-    { id: "chart-analytics", title: "📊 Interactive Chart.js Analytics Dashboard", price: 70, description: "Visual data reporting, line graphs, bar charts & CSV export features." },
-    { id: "cloud-upload", title: "☁️ AWS S3 / Cloudinary Image & Video Uploader", price: 60, description: "Direct drag-and-drop cloud file upload engine with auto-resizing." },
-    { id: "payment-gateways", title: "💳 Stripe & PayPal Multi-Payment Suite", price: 75, description: "Secure card payments, subscription recurring billing & refund webhooks." },
+    { id: "realtime-chat", title: "💬 Socket.io Real-Time Live Chat & Rooms", price: 78400, description: "Instant 1-on-1 & group messaging with online presence status & typing indicators.", badge: "Popular" },
+    { id: "redux-state", title: "📦 Redux Toolkit Global State & Caching Suite", price: 50400, description: "Pre-configured Redux store with RTK Query for automated cache invalidation." },
+    { id: "chart-analytics", title: "📊 Interactive Chart.js Analytics Dashboard", price: 61600, description: "Visual data reporting, line graphs, bar charts & CSV export features." },
+    { id: "cloud-upload", title: "☁️ AWS S3 / Cloudinary Image & Video Uploader", price: 53200, description: "Direct drag-and-drop cloud file upload engine with auto-resizing." },
+    { id: "payment-gateways", title: "💳 Stripe & PayPal Multi-Payment Suite", price: 70000, description: "Secure card payments, subscription recurring billing & refund webhooks." },
   ],
   features: [
     {

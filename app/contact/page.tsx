@@ -1,5 +1,5 @@
-import { Contact } from "@/app/components/contact/contact";
-import { ContactMap } from "@/app/components/contact/contact-map";
+import { Contact } from "@/components/contact/contact";
+import { ContactMap } from "@/components/contact/contact-map";
 
 export default function ContactPage() {
   return (

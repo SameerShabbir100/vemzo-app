@@ -4,9 +4,9 @@ import "./globals.css";
 import { manrope } from "@/theme/fonts";
 
 import ThemeRegistry from "@/theme/ThemeRegistry";
-import { Header } from "./components/common/header";
-import { Footer } from "./components/common/footer";
-import { WhatsAppButton } from "@/app/components/common/whatsapp-button";
+import { Header } from "@/components/common/header";
+import { Footer } from "@/components/common/footer";
+import { WhatsAppButton } from "@/components/common/whatsapp-button";
 import { Box } from "@mui/material";
 
 const geistSans = Geist({

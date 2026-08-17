@@ -1,6 +1,6 @@
 "use client";
 
-import { ReviewCard } from "@/app/components/common/review-card";
+import { ReviewCard } from "@/components/common/review-card";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, EffectCoverflow } from "swiper/modules";
 

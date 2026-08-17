@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { PROJECT_DETAILS } from "@/constants/project-details";
-import { ProjectAddOnCalculator } from "@/app/components/services/project-addon-calculator";
+import { ProjectAddOnCalculator } from "@/components/services/project-addon-calculator";
 
 import CheckCircleOutlinedIcon from "@mui/icons-material/CheckCircleOutlined";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";

@@ -138,11 +138,11 @@ export const SOCIALS = [
     icon: FaFacebook,
     link: "https://www.facebook.com/vemzotechnologies",
   },
-  // {
-  //   name: "Twitter",
-  //   icon: RxTwitterLogo,
-  //   link: "https://x.com/vemzotech",
-  // },
+  {
+    name: "Twitter",
+    icon: RxTwitterLogo,
+    link: "https://x.com/vemzotech",
+  },
 ] as const;
 
 export const FRONTEND_SKILL = [

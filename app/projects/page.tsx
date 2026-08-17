@@ -1,6 +1,6 @@
-import { ProjectsHero } from "@/app/components/projects/projects-hero";
-import { ProjectsGrid } from "@/app/components/projects/projects-grid";
-import { ProjectsCTA } from "@/app/components/projects/projects-cta";
+import { ProjectsHero } from "@/components/projects/projects-hero";
+import { ProjectsGrid } from "@/components/projects/projects-grid";
+import { ProjectsCTA } from "@/components/projects/projects-cta";
 
 export default function ProjectsPage() {
   return (

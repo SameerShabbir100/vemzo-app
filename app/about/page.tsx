@@ -1,7 +1,7 @@
-import { AboutHero } from "@/app/components/about/aboutHero";
-import { Team } from "@/app/components/about/team";
-import { CTASection } from "@/app/components/common/cta-section";
-import AboutAgency from "@/app/components/home/about-agency";
+import { AboutHero } from "@/components/about/aboutHero";
+import { Team } from "@/components/about/team";
+import { CTASection } from "@/components/common/cta-section";
+import AboutAgency from "@/components/home/about-agency";
 import { Box } from "@mui/material";
 export default function AboutPage() {
   return (

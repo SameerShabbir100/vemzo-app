@@ -1,4 +1,4 @@
-import { SkillDataProvider } from "@/app/components/common/skill-data-provider";
+import { SkillDataProvider } from "@/components/common/skill-data-provider";
 
 export const FRONTEND_SKILL = [
   {

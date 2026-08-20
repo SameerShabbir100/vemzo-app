@@ -150,10 +150,10 @@ export const AIChatbot = () => {
   };
 
   return (
-    <Box sx={{ position: "fixed", bottom: { xs: 16, sm: 24 }, right: { xs: 16, sm: 24 }, zIndex: 10000 }}>
+    <Box sx={{ position: "fixed", bottom: { xs: 20, sm: 28 }, right: { xs: 20, sm: 28 }, zIndex: 10000 }}>
       {/* Floating Chat Button */}
       {!isOpen && (
-        <Tooltip title="AI Assistant" placement="left" arrow>
+        <Tooltip title="AI Assistant" placement="left" arrow disableTouchListener>
           <Fab
             onClick={() => setIsOpen(true)}
             sx={{
@@ -179,8 +179,10 @@ export const AIChatbot = () => {
         <Paper
           elevation={12}
           sx={{
-            width: { xs: "320px", sm: "380px" },
-            height: "500px",
+            width: { xs: "295px", sm: "380px" },
+            maxWidth: "100%",
+            height: { xs: "440px", sm: "500px" },
+            maxHeight: "80vh",
             borderRadius: "24px",
             border: "1px solid rgba(0,220,130,0.15)",
             background: "linear-gradient(135deg, #05080f 0%, #0c101d 100%)",

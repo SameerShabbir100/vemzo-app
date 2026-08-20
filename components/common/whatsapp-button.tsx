@@ -11,12 +11,12 @@ export const WhatsAppButton = () => {
     <Box
       sx={{
         position: "fixed",
-        bottom: { xs: 84, sm: 92 },
-        right: { xs: 16, sm: 24 },
+        bottom: { xs: 88, sm: 96 },
+        right: { xs: 20, sm: 28 },
         zIndex: 9999,
       }}
     >
-      <Tooltip title="Chat with us" placement="left" arrow>
+      <Tooltip title="Chat with us" placement="left" arrow disableTouchListener>
         <IconButton
           component={Link}
           href="https://wa.me/923045421167"

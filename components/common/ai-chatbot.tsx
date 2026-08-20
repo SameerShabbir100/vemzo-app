@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
-import { Box, Paper, IconButton, Typography, TextField, Button, Avatar, Fab, CircularProgress } from "@mui/material";
+import { Box, Paper, IconButton, Typography, TextField, Button, Avatar, Fab, CircularProgress, Tooltip } from "@mui/material";
 import ChatIcon from "@mui/icons-material/Chat";
 import CloseIcon from "@mui/icons-material/Close";
 import SendIcon from "@mui/icons-material/Send";
@@ -150,24 +150,28 @@ export const AIChatbot = () => {
   };
 
   return (
-    <Box sx={{ position: "fixed", bottom: 24, right: 24, zIndex: 9999 }}>
+    <Box sx={{ position: "fixed", bottom: { xs: 16, sm: 24 }, right: { xs: 16, sm: 24 }, zIndex: 10000 }}>
       {/* Floating Chat Button */}
       {!isOpen && (
-        <Fab
-          onClick={() => setIsOpen(true)}
-          sx={{
-            bgcolor: "#00dc82",
-            color: "#080c14",
-            boxShadow: "0 8px 30px rgba(0,220,130,0.4)",
-            transition: "all 0.3s ease",
-            "&:hover": {
-              bgcolor: "#00ff9d",
-              transform: "scale(1.08) rotate(5deg)",
-            },
-          }}
-        >
-          <ChatIcon />
-        </Fab>
+        <Tooltip title="AI Assistant" placement="left" arrow>
+          <Fab
+            onClick={() => setIsOpen(true)}
+            sx={{
+              width: 56,
+              height: 56,
+              bgcolor: "#00dc82",
+              color: "#080c14",
+              boxShadow: "0 8px 30px rgba(0,220,130,0.4)",
+              transition: "all 0.3s ease",
+              "&:hover": {
+                bgcolor: "#00ff9d",
+                transform: "scale(1.08) rotate(5deg)",
+              },
+            }}
+          >
+            <ChatIcon />
+          </Fab>
+        </Tooltip>
       )}
 
       {/* Chat Window Panel */}

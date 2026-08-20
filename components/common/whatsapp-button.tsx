@@ -11,20 +11,20 @@ export const WhatsAppButton = () => {
     <Box
       sx={{
         position: "fixed",
-        bottom: 24,
-        left: 24,
+        bottom: { xs: 84, sm: 92 },
+        right: { xs: 16, sm: 24 },
         zIndex: 9999,
       }}
     >
-      <Tooltip title="Chat with us" placement="right" arrow>
+      <Tooltip title="Chat with us" placement="left" arrow>
         <IconButton
           component={Link}
           href="https://wa.me/923045421167"
           target="_blank"
           rel="noopener noreferrer"
           sx={{
-            width: 64,
-            height: 64,
+            width: 56,
+            height: 56,
             bgcolor: "#25D366",
             color: "#fff",
             border: "2px solid rgba(255,255,255,.15)",
@@ -38,7 +38,7 @@ export const WhatsAppButton = () => {
             },
           }}
         >
-          <WhatsAppIcon sx={{ fontSize: 36 }} />
+          <WhatsAppIcon sx={{ fontSize: 32 }} />
         </IconButton>
       </Tooltip>
     </Box>

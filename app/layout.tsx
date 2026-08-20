@@ -7,7 +7,7 @@ import ThemeRegistry from "@/theme/ThemeRegistry";
 import { Header } from "@/components/common/header";
 import { Footer } from "@/components/common/footer";
 import { WhatsAppButton } from "@/components/common/whatsapp-button";
-import { AIChatbot } from "@/app/components/common/ai-chatbot";
+import { AIChatbot } from "@/components/common/ai-chatbot";
 import { Box } from "@mui/material";
 
 const geistSans = Geist({

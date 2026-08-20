@@ -10,7 +10,7 @@ import { FAQ } from "@/components/home/faq";
 import { Projects } from "@/components/home/projects";
 import StatsSection from "@/components/home/stats-sections";
 import AboutAgency from "@/components/home/about-agency";
-import { CompareUs } from "./components/home/compare-us";
+import { CompareUs } from "@/components/home/compare-us";
 // import { ProjectEstimator } from "./components/home/project-estimator";
 
 export default function Home() {

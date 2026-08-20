@@ -139,7 +139,7 @@ export const ProjectEstimator = () => {
 
         <Grid container spacing={5}>
           {/* Left Configuration Panel */}
-          <Grid item xs={12} lg={8}>
+          <Grid size={{ xs: 12, lg: 8 }}>
             <Paper
               elevation={0}
               sx={{
@@ -160,11 +160,13 @@ export const ProjectEstimator = () => {
                 {steps.map((label, idx) => (
                   <Step key={label}>
                     <StepLabel
-                      StepIconProps={{
-                        sx: {
-                          "&.Mui-active": { color: "#00dc82", transform: "scale(1.2)" },
-                          "&.Mui-completed": { color: "#00dc82" },
-                          color: "rgba(255,255,255,0.15)",
+                      slotProps={{
+                        stepIcon: {
+                          sx: {
+                            "&.Mui-active": { color: "#00dc82", transform: "scale(1.2)" },
+                            "&.Mui-completed": { color: "#00dc82" },
+                            color: "rgba(255,255,255,0.15)",
+                          },
                         },
                       }}
                     >
@@ -192,7 +194,7 @@ export const ProjectEstimator = () => {
                       {PROJECT_TYPES.map((type) => {
                         const isSelected = selectedType === type.id;
                         return (
-                          <Grid item xs={12} sm={6} key={type.id} sx={{ display: "flex" }}>
+                          <Grid size={{xs: 12, sm: 6}} key={type.id} sx={{ display: "flex" }}>
                             <Paper
                               onClick={() => setSelectedType(type.id)}
                               elevation={0}
@@ -276,7 +278,7 @@ export const ProjectEstimator = () => {
                       {ADDONS.map((addon) => {
                         const isAdded = selectedAddons.includes(addon.id);
                         return (
-                          <Grid item xs={12} sm={6} key={addon.id} sx={{ display: "flex" }}>
+                          <Grid size={{xs: 12, sm: 6}} key={addon.id} sx={{ display: "flex" }}>
                             <Paper
                               onClick={() => toggleAddon(addon.id)}
                               elevation={0}
@@ -334,7 +336,7 @@ export const ProjectEstimator = () => {
                     </Typography>
 
                     <Grid container spacing={4}>
-                      <Grid item xs={12} sm={6}>
+                      <Grid size={{ xs: 12, sm: 6 }}>
                         <TextField
                           label="Full Name"
                           variant="outlined"
@@ -357,7 +359,7 @@ export const ProjectEstimator = () => {
                           }}
                         />
                       </Grid>
-                      <Grid item xs={12} sm={6}>
+                      <Grid size={{ xs: 12, sm: 6 }}>
                         <TextField
                           label="Email Address"
                           variant="outlined"
@@ -381,7 +383,7 @@ export const ProjectEstimator = () => {
                           }}
                         />
                       </Grid>
-                      <Grid item xs={12}>
+                      <Grid size={{ xs: 12 }}>
                         <TextField
                           label="Message / Custom Requirements Note"
                           variant="outlined"
@@ -472,7 +474,7 @@ export const ProjectEstimator = () => {
           </Grid>
 
           {/* Right Summary Panel */}
-          <Grid item xs={12} lg={4}>
+          <Grid size={{ xs: 12, lg: 4 }}>
             <Paper
               elevation={0}
               sx={{

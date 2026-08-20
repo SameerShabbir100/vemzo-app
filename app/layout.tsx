@@ -7,6 +7,7 @@ import ThemeRegistry from "@/theme/ThemeRegistry";
 import { Header } from "./components/common/header";
 import { Footer } from "./components/common/footer";
 import { WhatsAppButton } from "@/app/components/common/whatsapp-button";
+import { AIChatbot } from "@/app/components/common/ai-chatbot";
 import { Box } from "@mui/material";
 
 const geistSans = Geist({
@@ -44,8 +45,10 @@ export default function RootLayout({
           </main>
           <Footer />
           <WhatsAppButton />
+          <AIChatbot />
         </ThemeRegistry>
       </body>
     </html>
   );
 }
+

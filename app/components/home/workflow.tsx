@@ -120,7 +120,7 @@ export const Workflow = () => {
             left: "50%",
             top: 0,
             bottom: 0,
-            width: "2px",
+            width: "1px",
             transform: "translateX(-50%)",
             bgcolor: "rgba(0,220,130,0.15)",
           }}
@@ -132,7 +132,7 @@ export const Workflow = () => {
             position: "absolute",
             left: "50%",
             top: 0,
-            width: "2px",
+            width: "1px",
             transform: "translateX(-50%)",
             bgcolor: "#00dc82",
             transition: "height 0.3s ease",
@@ -158,36 +158,12 @@ export const Workflow = () => {
                   justifyContent: isLeft ? "flex-start" : "flex-end",
                 }}
               >
-                {/* Center dot */}
-                {/* <Box
-                  sx={{
-                    position: "absolute",
-                    left: "50%",
-                    transform: "translateX(-50%)",
-                    width: 16,
-                    height: 16,
-                    borderRadius: "50%",
-                    border: "2px solid",
-                    transition: "all 0.3s ease",
-                    ...(isActive
-                      ? {
-                          bgcolor: "#00dc82",
-                          borderColor: "#00dc82",
-                          boxShadow: "0 0 20px rgba(0,220,130,0.6)",
-                          transform: "translateX(-50%) scale(1.25)",
-                        }
-                      : {
-                          bgcolor: "#090d1f",
-                          borderColor: "rgba(0,220,130,0.3)",
-                        }),
-                  }}
-                /> */}
                 <Box
                   sx={{
                     position: "absolute",
                     left: "50%",
-                    width: 16,
-                    height: 16,
+                    width: 24,
+                    height: 24,
                     borderRadius: "50%",
                     border: "2px solid",
                     transition: "all 0.3s ease",
@@ -196,7 +172,7 @@ export const Workflow = () => {
                       ? "translateX(-50%) scale(1.25)"
                       : "translateX(-50%)",
 
-                    bgcolor: isActive ? "#00dc82" : "#090d1f",
+                    bgcolor: isActive ? "#00dc82" : "#000000",
 
                     borderColor: isActive ? "#00dc82" : "rgba(0,220,130,0.3)",
 

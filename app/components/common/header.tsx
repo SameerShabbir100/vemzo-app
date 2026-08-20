@@ -49,9 +49,9 @@ export const Header = () => {
           zIndex: 50,
         }}
       >
-        <Container 
-          maxWidth="xl" 
-          sx={{ 
+        <Container
+          maxWidth="xl"
+          sx={{
             height: "100%",
             px: { xs: 2, md: 5 },
           }}

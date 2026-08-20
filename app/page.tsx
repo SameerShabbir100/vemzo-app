@@ -10,6 +10,9 @@ import { FAQ } from "./components/home/faq";
 import { Projects } from "./components/home/projects";
 import StatsSection from "./components/home/stats-sections";
 import AboutAgency from "./components/home/about-agency";
+import { CompareUs } from "./components/home/compare-us";
+// import { ProjectEstimator } from "./components/home/project-estimator";
+
 export default function Home() {
   return (
     <>
@@ -20,6 +23,8 @@ export default function Home() {
       <StatsSection />
       <Projects />
       <Workflow />
+      <CompareUs />
+      {/* <ProjectEstimator /> */}
       <Encryption />
       <Industries />
       <Reviews />
@@ -27,3 +32,4 @@ export default function Home() {
     </>
   );
 }
+

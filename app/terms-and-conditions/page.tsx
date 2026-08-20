@@ -1,8 +1,8 @@
 import { Metadata } from "next";
-import { LegalHero } from "@/app/components/legal/legal-hero";
-import { LegalContent } from "@/app/components/legal/legal-content";
-import { CTASection } from "@/app/components/common/cta-section";
-import type { LegalSection } from "@/app/components/legal/legal-content";
+import { LegalHero } from "@/components/legal/legal-hero";
+import { LegalContent } from "@/components/legal/legal-content";
+import { CTASection } from "@/components/common/cta-section";
+import type { LegalSection } from "@/components/legal/legal-content";
 
 export const metadata: Metadata = {
   title: "Terms & Conditions | Vemzo Technologies",

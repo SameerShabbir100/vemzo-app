@@ -1,6 +1,6 @@
-import { ServicesHero } from "@/app/components/services-1/services-hero";
-import { ServicesGrid } from "@/app/components/home/old-services-grid";
-import { CTASection } from "@/app/components/common/cta-section";
+import { ServicesHero } from "@/components/services-1/services-hero";
+import { ServicesGrid } from "@/components/home/old-services-grid";
+import { CTASection } from "@/components/common/cta-section";
 
 export default function ServicesOnePage() {
   return (

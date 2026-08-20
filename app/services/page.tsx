@@ -1,11 +1,11 @@
 import { Metadata } from "next";
-import { ServicesHero } from "@/app/components/services-1/services-hero";
-import { BentoServicesGrid } from "@/app/components/services/bento-services-grid";
-import { DeliveryProcess } from "@/app/components/services/delivery-process";
-import { QualityGuarantee } from "@/app/components/services/quality-guarantee";
-import { ClientTestimonials } from "@/app/components/services/client-testimonials";
-import { ServicesFAQ } from "@/app/components/services/services-faq";
-import { CTASection } from "@/app/components/common/cta-section";
+import { ServicesHero } from "@/components/services-1/services-hero";
+import { BentoServicesGrid } from "@/components/services/bento-services-grid";
+import { DeliveryProcess } from "@/components/services/delivery-process";
+import { QualityGuarantee } from "@/components/services/quality-guarantee";
+import { ClientTestimonials } from "@/components/services/client-testimonials";
+import { ServicesFAQ } from "@/components/services/services-faq";
+import { CTASection } from "@/components/common/cta-section";
 
 export const metadata: Metadata = {
   title: "Software Products & Turn-Key Digital Solutions | Vemzo Technologies",

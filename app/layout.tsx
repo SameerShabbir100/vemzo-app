@@ -28,6 +28,11 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "Vemzo Technologies | A Digital Agency",
   description: "A Digital Agency",
+  icons: {
+    icon: "/vemzo-logo.png",
+    shortcut: "/vemzo-logo.png",
+    apple: "/vemzo-logo.png",
+  },
 };
 
 export default function RootLayout({

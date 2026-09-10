@@ -1,11 +1,6 @@
 import { FaYoutube, FaFacebook } from "react-icons/fa";
-import {
-  RxDiscordLogo,
-  RxGithubLogo,
-  RxInstagramLogo,
-  RxTwitterLogo,
-  RxLinkedinLogo,
-} from "react-icons/rx";
+import { FaXTwitter } from "react-icons/fa6";
+import { RxInstagramLogo, RxLinkedinLogo } from "react-icons/rx";
 
 export const SKILL_DATA = [
   {
@@ -140,7 +135,7 @@ export const SOCIALS = [
   },
   {
     name: "Twitter",
-    icon: RxTwitterLogo,
+    icon: FaXTwitter,
     link: "https://x.com/vemzotech",
   },
 ] as const;
@@ -318,7 +313,7 @@ export const FOOTER_DATA = [
       },
       {
         name: "Twitter",
-        icon: RxTwitterLogo,
+        icon: FaXTwitter,
         link: "https://x.com/vemzotech",
       },
     ],
@@ -333,7 +328,7 @@ export const FOOTER_DATA = [
       },
       {
         name: "Twitter",
-        icon: RxTwitterLogo,
+        icon: FaXTwitter,
         link: "https://x.com/vemzotech",
       },
       {
@@ -886,7 +881,7 @@ export const SOCIAL_LINKS = [
   {
     name: "Twitter",
     href: "https://x.com/vemzotech",
-    icon: RxTwitterLogo,
+    icon: FaXTwitter,
   },
 ] as const;
 

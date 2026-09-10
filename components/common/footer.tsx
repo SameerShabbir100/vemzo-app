@@ -59,22 +59,21 @@ export const Footer = () => {
                 }}
               >
                 <Image
-                  src="/nuxt-logo.svg"
+                  src="/vemzo-logo.png"
                   alt="Vemzo Technologies"
-                  width={52}
-                  height={52}
+                  width={60}
+                  height={60}
                   priority
                 />
 
                 <Typography
-                  variant="h5"
+                  variant="h6"
                   sx={{
-                    ml: 2,
                     color: "#fff",
                     fontWeight: 700,
                   }}
                 >
-                  Vemzo
+                  Vemzo Technologies
                 </Typography>
               </Link>
 

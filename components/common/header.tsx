@@ -80,26 +80,25 @@ export const Header = () => {
               }}
             >
               <Image
-                src="/nuxt-logo.svg"
+                src="/vemzo-logo.png"
                 alt="Vemzo Technologies"
-                width={56}
-                height={56}
+                width={60}
+                height={60}
                 priority
                 draggable={false}
-                style={{ cursor: "pointer" }}
+                style={{ cursor: "pointer", objectFit: "contain" }}
               />
 
               <Typography
                 variant="h6"
                 sx={{
-                  ml: "10px",
                   fontWeight: 700,
                   color: "#d1d5db",
                   display: {
                     xs: "none",
                     md: "flex",
                   },
-                  fontSize: "1rem",
+                  fontSize: { sm: "16px", lg: "20px" },
                 }}
               >
                 Vemzo Technologies
